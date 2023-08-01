@@ -19,7 +19,7 @@ function NavBar() {
       <div className="navbar-container">
         <div className="navbar-image">
           <Link to="/">
-            <img src="./images/Stjarnorter_logga1.png" />
+            <img src="images/Stjarnorter_logga1.png" />
           </Link>
         </div>
         <div className="navbar-right">
