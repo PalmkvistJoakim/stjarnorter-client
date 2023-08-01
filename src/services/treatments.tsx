@@ -30,7 +30,7 @@ const treatments = [
         </p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
   {
@@ -63,7 +63,7 @@ const treatments = [
         <p>Maila eller ring för mer information.</p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
 
@@ -107,7 +107,7 @@ const treatments = [
         </p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
   {
@@ -146,7 +146,7 @@ const treatments = [
         <p>(Aditi = utan gräns!)</p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
   {
@@ -178,7 +178,7 @@ const treatments = [
         </p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
   {
@@ -203,7 +203,7 @@ const treatments = [
         <p>Behandlingen tar 1-1,5 timme.</p>
       </>
     ),
-    logo: "/images/Stjarnorter_logga1.png",
+    logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",
   },
 ];
