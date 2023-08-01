@@ -4,7 +4,7 @@ import Button from "../../common/button/Button";
 function HomeBackgroundWithLinks() {
   return (
     <div className="home-background-with-links">
-      <img src="/images/2023-231.jpg" />
+      <img src="/images/Stjarnorter_logga1.png" />
       <p>
         Upplev Hälsa & Harmoni!
         <br /> Utforska vårt sortiment av produkter, behandlingar och
