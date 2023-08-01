@@ -5,7 +5,7 @@ function FooterSection1() {
   return (
     <div className="footer-section-1">
       <Link to="/">
-        <img src="/images/stjarnorter.png" />
+        <img src="./images/stjarnorter.png" />
       </Link>
       <div className="footer-section-1-about">
         <h1>Ett självklart val för en bättre hälsa</h1>
