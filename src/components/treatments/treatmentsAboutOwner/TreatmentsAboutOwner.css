@@ -1,0 +1,34 @@
+.treatments-about-owner {
+  display: flex;
+  margin: 160px 10%;
+}
+
+.treatments-about-owner-container {
+  position: relative;
+}
+
+.treatments-about-owner-container img {
+  width: 632px;
+  height: 745px;
+  object-fit: cover;
+}
+
+.treatments-about-owner-description {
+  background-color: #011b10;
+  position: absolute;
+  top: 20%;
+  left: 80%;
+  width: 709px;
+  height: 712px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.treatments-about-owner-description p {
+  width: 603px;
+  height: 559px;
+  color: white;
+  font-style: italic;
+  font-size: 34px;
+}

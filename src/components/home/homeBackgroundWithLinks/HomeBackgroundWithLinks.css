@@ -1,0 +1,27 @@
+.home-background-with-links {
+  position: relative;
+}
+
+.home-background-with-links img {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.home-background-with-links p {
+  width: 1000px;
+  position: absolute;
+  margin-left: 5%;
+  top: 32%;
+  color: white;
+  font-size: 46px;
+}
+
+.home-background-with-links-buttons {
+  display: flex;
+  width: 64%;
+  top: 66%;
+  margin-left: 5%;
+  justify-content: space-between;
+  position: absolute;
+}

@@ -1,0 +1,17 @@
+.home-popular-products {
+  margin-top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-popular-products p {
+  font-size: 40px;
+  font-weight: bold;
+  color: #011b10;
+}
+
+.home-popular-products-container {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}

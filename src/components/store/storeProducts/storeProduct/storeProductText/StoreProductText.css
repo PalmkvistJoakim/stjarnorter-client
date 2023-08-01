@@ -1,0 +1,12 @@
+.store-product-text {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.store-product-text-desc-con {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}

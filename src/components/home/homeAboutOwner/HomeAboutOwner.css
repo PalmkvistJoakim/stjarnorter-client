@@ -1,0 +1,28 @@
+.home-about-owner {
+  position: relative;
+  height: 1160px;
+}
+
+.home-about-owner img {
+  width: 800px;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.home-about-owner-description {
+  position: absolute;
+  top: 14%;
+  left: 47.5%;
+  display: flex;
+  background-color: #011b10;
+  width: 800px;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-about-owner-description p {
+  width: 610px;
+  font-size: 36px;
+  color: white;
+}

@@ -1,0 +1,26 @@
+.home-products-description {
+  display: flex;
+  position: relative;
+  width: 100%;
+  margin-top: 160px;
+}
+
+.home-products-description img {
+  height: 600px;
+  margin-left: 5%;
+}
+
+.home-products-description p {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b7bf96;
+  color: #011b10;
+  font-size: 36px;
+  font-weight: bold;
+  width: 800px;
+  height: 400px;
+}

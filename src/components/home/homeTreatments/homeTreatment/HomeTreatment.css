@@ -1,0 +1,29 @@
+.home-treatment {
+  width: 310px;
+  height: 150px;
+}
+
+.home-treatment-container {
+  display: flex;
+  align-items: center;
+  color: #011b10;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.home-treatment-container img {
+  width: 60px;
+  margin-right: 20px;
+}
+
+.home-treatment-description p {
+  margin-top: 10px;
+  font-size: 20px;
+  margin-left: 5%;
+  color: #011b10;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

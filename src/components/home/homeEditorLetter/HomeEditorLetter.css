@@ -1,0 +1,13 @@
+.home-editor-letter {
+  margin: 160px 10%;
+  border-top: 2px solid #011b10;
+  border-bottom: 2px solid #011b10;
+}
+
+.home-editor-letter p {
+  font-style: italic;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 80px 0px;
+  color: #011b10;
+}

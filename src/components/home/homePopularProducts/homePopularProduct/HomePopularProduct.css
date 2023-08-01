@@ -1,0 +1,16 @@
+.home-popular-product {
+  position: relative;
+}
+
+.home-popular-product img {
+  width: 440px;
+  height: 440px;
+  object-fit: cover;
+}
+
+.home-popular-product button {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}

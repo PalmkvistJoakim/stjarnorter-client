@@ -1,0 +1,36 @@
+.store-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f1f1;
+  width: 360px;
+  height: 600px;
+}
+
+.store-product-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.store-product img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+}
+
+.store-product button {
+  width: 100%;
+  height: 50px;
+  background-color: #133a1b;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.store-product-link {
+  text-decoration: none;
+  width: 260px;
+  color: black;
+}

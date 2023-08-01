@@ -1,0 +1,25 @@
+.footer-section-1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  border-right: 2px solid #011b10;
+}
+
+.footer img {
+  width: 200px;
+  height: 200px;
+}
+
+.footer-section-1-about {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.footer-section-1-about h1 {
+  font-size: 40px;
+}
+
+.footer-section-1-about p {
+  font-size: 22px;
+}

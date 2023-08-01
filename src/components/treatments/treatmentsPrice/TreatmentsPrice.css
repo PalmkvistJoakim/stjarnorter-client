@@ -1,0 +1,24 @@
+.treatments-price {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.treatments-price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  height: 400px;
+  background-color: #e4deae;
+}
+
+.treatments-price-container h1 {
+  font-size: 50px;
+}
+
+.treatments-price-container p {
+  font-size: 22px;
+}
