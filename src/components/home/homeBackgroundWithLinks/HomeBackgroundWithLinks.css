@@ -28,7 +28,7 @@
 
 @media (max-width: 768px) {
   .home-background-with-links-buttons {
-    margin-top: 90px;
+    margin-top: 180px;
     width: 100%;
     flex-direction: column;
     align-items: center;

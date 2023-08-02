@@ -1,7 +1,7 @@
 .home-products-description {
   display: flex;
   justify-content: center;
-  margin-top: 160px;
+  margin-top: 200px;
   padding: 0% 5%;
 }
 .home-products-description-container {
@@ -10,7 +10,7 @@
 
 .home-products-description-container img {
   width: 80%;
-  height: 100vh;
+  height: 70vh;
   object-fit: cover;
 }
 
