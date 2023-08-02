@@ -1,10 +1,24 @@
 .button button {
   background-color: #133a1b;
-  padding: 20px 60px;
-  border-radius: 14px;
-  font-size: 30px;
   color: white;
-  min-width: 300px;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .button button {
+    font-size: 16px;
+    min-width: 190px;
+    min-height: 40px;
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .button button {
+    font-size: 30px;
+    min-width: 240px;
+    min-height: 60px;
+    border-radius: 16px;
+  }
 }

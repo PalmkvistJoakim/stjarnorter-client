@@ -1,10 +1,25 @@
 import "./NavBar.css";
 import { NavLink, Link } from "react-router-dom";
-import ShoppingCartOutlined from "@mui/icons-material/ShoppingCartOutlined";
+import { MenuOutlined, ShoppingCartOutlined } from "@mui/icons-material/";
 import { getHeaders } from "../../services/headers";
+import { useEffect, useState } from "react";
 
 function NavBar() {
   const headers = getHeaders();
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1023);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   const renderHeaders = () => {
     return headers.map((header) => (
@@ -17,22 +32,20 @@ function NavBar() {
   return (
     <div className="navbar">
       <div className="navbar-container">
-        <div className="navbar-image">
-          <Link to="/">
-            <img src="images/Stjarnorter_logga1.png" />
-          </Link>
-        </div>
-        <div className="navbar-right">
-          <div className="navbar-headers">{renderHeaders()}</div>
-          <div className="navbar-icon">
-            <ShoppingCartOutlined
-              style={{
-                fontSize: "40px",
-                color: "white",
-                marginLeft: "80px",
-              }}
-            />
-          </div>
+        {isMobile && (
+          <MenuOutlined style={{ fontSize: "30px", color: "white" }} />
+        )}
+        <Link to="/">
+          <img src="images/Stjarnorter_logga1.png" />
+        </Link>
+        <div className="navbar-headers">
+          {!isMobile && renderHeaders()}
+          <ShoppingCartOutlined
+            style={{
+              fontSize: "30px",
+              color: "white",
+            }}
+          />
         </div>
       </div>
     </div>

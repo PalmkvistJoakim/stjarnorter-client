@@ -17,9 +17,9 @@ function Home() {
       <HomeBackgroundWithLinks />
       <HomeProductsDescription />
       <HomePopularProducts />
-      <HomeTreatments />
+      {/* <HomeTreatments />
       <HomeEditorLetter />
-      <HomeAboutOwner />
+      <HomeAboutOwner /> */}
     </div>
   );
 }

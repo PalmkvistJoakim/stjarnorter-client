@@ -1,27 +1,69 @@
 .home-background-with-links {
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
 .home-background-with-links img {
   width: 100%;
-  height: 1000px;
+  height: 100vh;
   object-fit: cover;
 }
 
-.home-background-with-links p {
-  width: 1000px;
+.home-background-with-links-content {
+  display: flex;
+  flex-direction: column;
   position: absolute;
-  margin-left: 5%;
-  top: 32%;
+  top: 36%;
+  padding: 0% 5%;
+}
+
+.home-background-with-links p {
   color: white;
-  font-size: 46px;
 }
 
 .home-background-with-links-buttons {
   display: flex;
-  width: 64%;
-  top: 66%;
-  margin-left: 5%;
-  justify-content: space-between;
-  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .home-background-with-links-buttons {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-background-with-links-buttons button {
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-background-with-links-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-background-with-links p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-background-with-links-buttons {
+    margin-top: 18px;
+    width: 600px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-background-with-links p {
+    font-size: 40px;
+  }
+
+  .home-background-with-links-buttons {
+    width: 800px;
+    justify-content: space-between;
+  }
 }

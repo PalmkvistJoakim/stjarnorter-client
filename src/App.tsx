@@ -12,22 +12,19 @@ import About from "./components/about/About";
 function App() {
   return (
     <div className="app">
-      <div className="app-container">
-        <NavBar />
-        <Routes>
-          {/* <Route path="/stjarnorter-client" element={<Home />} /> */}
-          <Route path="/" element={<Home />} />
-          <Route path="/butik" element={<Store />} />
-          <Route path="/butik/:categoryName" element={<StoreProducts />} />
-          <Route
-            path="/butik/:categoryName/:productName"
-            element={<StoreProductPage />}
-          />
-          <Route path="/behandlingar" element={<Treatments />} />
-          <Route path="/om" element={<About />} />
-        </Routes>
-        <Footer />
-      </div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path="/butik" element={<Store />} />
+        <Route path="/butik/:categoryName" element={<StoreProducts />} />
+        <Route
+          path="/butik/:categoryName/:productName"
+          element={<StoreProductPage />}
+        />
+        <Route path="/behandlingar" element={<Treatments />} />
+        <Route path="/om" element={<About />} /> */}
+      </Routes>
+      {/* <Footer /> */}
     </div>
   );
 }
