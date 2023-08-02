@@ -14,6 +14,7 @@ function App() {
     <div className="app">
       <NavBar />
       <Routes>
+        <Route path="/stjarnorter-client/" element={<Home />} />
         <Route path="/" element={<Home />} />
         {/* <Route path="/butik" element={<Store />} />
         <Route path="/butik/:categoryName" element={<StoreProducts />} />
