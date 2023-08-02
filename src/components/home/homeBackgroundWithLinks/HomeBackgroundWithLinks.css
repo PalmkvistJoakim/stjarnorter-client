@@ -6,7 +6,7 @@
 
 .home-background-with-links img {
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   object-fit: cover;
 }
 
@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 36%;
+  top: 32%;
   padding: 0% 5%;
 }
 
@@ -28,6 +28,7 @@
 
 @media (max-width: 768px) {
   .home-background-with-links-buttons {
+    margin-top: 90px;
     width: 100%;
     flex-direction: column;
     align-items: center;
