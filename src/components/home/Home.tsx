@@ -16,7 +16,7 @@ function Home() {
     <div className="home">
       <HomeBackgroundWithLinks />
       <HomeProductsDescription />
-      <HomePopularProducts />
+      {/* <HomePopularProducts /> */}
       {/* <HomeTreatments />
       <HomeEditorLetter />
       <HomeAboutOwner /> */}

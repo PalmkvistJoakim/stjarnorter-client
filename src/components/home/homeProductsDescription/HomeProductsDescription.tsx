@@ -4,7 +4,7 @@ function HomeProductsDescription() {
   return (
     <div className="home-products-description">
       <div className="home-products-description-container">
-        <img src="images\MensesCrampEliminator_1800x1200.webp" />
+        <img src="images/MensesCrampEliminator_1800x1200.webp" />
         <div className="home-products-description-text">
           <p>
             Upptäck kraften i naturligt välbefinnande
