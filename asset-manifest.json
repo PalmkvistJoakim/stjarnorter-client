@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/stjarnorter-client/static/css/main.9230c255.css",
+    "main.css": "/stjarnorter-client/static/css/main.354d0675.css",
     "main.js": "/stjarnorter-client/static/js/main.c6a45c1d.js",
     "index.html": "/stjarnorter-client/index.html",
-    "main.9230c255.css.map": "/stjarnorter-client/static/css/main.9230c255.css.map",
+    "main.354d0675.css.map": "/stjarnorter-client/static/css/main.354d0675.css.map",
     "main.c6a45c1d.js.map": "/stjarnorter-client/static/js/main.c6a45c1d.js.map"
   },
   "entrypoints": [
-    "static/css/main.9230c255.css",
+    "static/css/main.354d0675.css",
     "static/js/main.c6a45c1d.js"
   ]
 }
