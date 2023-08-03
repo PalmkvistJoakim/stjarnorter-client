@@ -16,8 +16,8 @@ function HomeTreatments() {
     ));
   };
   return (
-    <div>
-      <div className="home-treatments">
+    <div className="home-treatments">
+      <div className="home-treatments-image">
         <img src="images\INA40-1.jpg" />
         <p>Våra behandlingar</p>
       </div>

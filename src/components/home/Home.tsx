@@ -1,5 +1,5 @@
 import "./Home.css";
-import HomeBackgroundWithLinks from "./homeBackgroundWithLinks/HomeBackgroundWithLinks";
+import HomeBackground from "./homeBackground/HomeBackground";
 import HomeProductsDescription from "./homeProductsDescription/HomeProductsDescription";
 import HomePopularProducts from "./homePopularProducts/HomePopularProducts";
 import HomeTreatments from "./homeTreatments/HomeTreatments";
@@ -14,12 +14,12 @@ function Home() {
 
   return (
     <div className="home">
-      <HomeBackgroundWithLinks />
+      <HomeBackground />
       <HomeProductsDescription />
-      {/* <HomePopularProducts /> */}
-      {/* <HomeTreatments />
+      <HomePopularProducts />
+      <HomeTreatments />
       <HomeEditorLetter />
-      <HomeAboutOwner /> */}
+      <HomeAboutOwner />
     </div>
   );
 }

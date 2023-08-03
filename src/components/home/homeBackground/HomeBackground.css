@@ -1,0 +1,50 @@
+.home-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.home-background img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.home-background-content {
+  position: absolute;
+  top: 30%;
+  padding: 0% 5%;
+}
+
+.home-background p {
+  color: white;
+}
+
+@media (max-width: 1023px) {
+  .home-background-content {
+    text-align: center;
+  }
+
+  .home-background p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-background {
+    justify-content: start;
+  }
+
+  .home-background img {
+    height: 60vh;
+  }
+
+  .home-background-content {
+    top: 50%;
+  }
+
+  .home-background p {
+    font-size: 28px;
+  }
+}

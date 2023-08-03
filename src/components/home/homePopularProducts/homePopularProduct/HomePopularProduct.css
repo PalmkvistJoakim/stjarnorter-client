@@ -1,16 +1,23 @@
 .home-popular-product {
   position: relative;
+  width: 40%;
+  margin-bottom: 60px;
 }
 
 .home-popular-product img {
-  width: 440px;
-  height: 440px;
+  width: 100%;
   object-fit: cover;
 }
 
 .home-popular-product button {
   position: absolute;
-  bottom: -50px;
+  bottom: -18px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media (min-width: 768px) {
+  .home-popular-product {
+    width: 28%;
+  }
 }
