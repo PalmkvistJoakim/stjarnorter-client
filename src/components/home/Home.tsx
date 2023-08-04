@@ -18,8 +18,8 @@ function Home() {
       {/* <HomeProductsDescription /> */}
       <HomePopularProducts />
       <HomeEditorLetter />
-      {/* <HomeTreatments />
-      <HomeAboutOwner /> */}
+      <HomeTreatments />
+      <HomeAboutOwner />
     </div>
   );
 }

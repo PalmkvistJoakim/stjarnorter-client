@@ -73,11 +73,12 @@
 
   .home-background-content {
     position: absolute;
-    bottom: 10px;
+    top: 30px;
+    max-width: 24.5%;
   }
 
   .home-background p {
     color: white;
-    font-size: 24px;
+    font-size: 2vw;
   }
 }

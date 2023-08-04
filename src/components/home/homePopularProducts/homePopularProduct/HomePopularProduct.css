@@ -10,7 +10,7 @@
 
 .home-popular-product button {
   color: white;
-  font-size: 4vw;
+  font-size: 3.5vw;
   background-color: #133a1b;
   border: none;
   border-radius: 12px;
@@ -28,7 +28,7 @@
   }
 
   .home-popular-product button {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -38,6 +38,6 @@
   }
 
   .home-popular-product button {
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }

@@ -8,7 +8,8 @@ function HomeEditorLetter() {
         bara man kliver in på Catharina Ehlos gårdsplan. Hon driver praktiken
         Själens stjärna och drivs själv av tanken på att allt hör samman, att
         kropp och själ är ett.”
-        <br />- Kristianstadsbladet
+        <br />
+        <span style={{ color: "#011b10" }}>- Kristianstadsbladet</span>
       </p>
     </div>
   );
