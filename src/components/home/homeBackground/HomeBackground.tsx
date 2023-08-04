@@ -1,15 +1,13 @@
+import { useEffect, useState } from "react";
 import "./HomeBackground.css";
 import HomeBackgroundLinks from "./homeBackgroundLinks/HomeBackgroundLinks";
-import { useState, useEffect } from "react";
 
 function HomeBackground() {
-  const [isIpad, setIsIpad] = useState(
-    window.innerWidth >= 768 && window.innerWidth <= 1023
-  );
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsIpad(window.innerWidth >= 768 && window.innerWidth <= 1023);
+      setIsDesktop(window.innerWidth >= 1024);
     };
 
     window.addEventListener("resize", handleResize);
@@ -20,23 +18,23 @@ function HomeBackground() {
   }, []);
 
   return (
-    <>
-      <div className="home-background">
-        <img src="images/2023-231.jpg" />
+    <div className="home-background">
+      <img src="images/2023-231.jpg" />
+      <div className="home-background-container">
         <div className="home-background-content">
           <p>
             Upplev Hälsa & Harmoni!
+            {!isDesktop && <br />}
             <br /> Utforska vårt sortiment av produkter, behandlingar och
             inspirerande kurser för holistisk välmående.
+            {!isDesktop && <br />}
             <br /> Upptäck örter, kryddor, salter, salvor och teer för
             chakrasystemet.
-            <br /> Välkommen till Stjärnörter och Själens Stjärna!
           </p>
         </div>
-        {isIpad && <HomeBackgroundLinks />}
+        <HomeBackgroundLinks />
       </div>
-      {!isIpad && <HomeBackgroundLinks />}
-    </>
+    </div>
   );
 }
 

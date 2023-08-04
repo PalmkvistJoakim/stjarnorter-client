@@ -1,6 +1,5 @@
 import "./HomePopularProduct.css";
 import { Link } from "react-router-dom";
-import Button from "../../../common/button/Button";
 
 interface HomePopularProductProps {
   name: string;
@@ -13,8 +12,8 @@ function HomePopularProduct({ name, path, img }: HomePopularProductProps) {
     <div className="home-popular-product">
       <Link to={path}>
         <img src={img} />
+        <button>{name}</button>
       </Link>
-      <Button label={name} path={path} />
     </div>
   );
 }

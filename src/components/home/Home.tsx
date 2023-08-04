@@ -15,11 +15,11 @@ function Home() {
   return (
     <div className="home">
       <HomeBackground />
-      <HomeProductsDescription />
+      {/* <HomeProductsDescription /> */}
       <HomePopularProducts />
-      <HomeTreatments />
       <HomeEditorLetter />
-      <HomeAboutOwner />
+      {/* <HomeTreatments />
+      <HomeAboutOwner /> */}
     </div>
   );
 }

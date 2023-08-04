@@ -1,7 +1,6 @@
 .home-popular-product {
   position: relative;
-  width: 40%;
-  margin-bottom: 60px;
+  width: 48%;
 }
 
 .home-popular-product img {
@@ -10,14 +9,35 @@
 }
 
 .home-popular-product button {
+  color: white;
+  font-size: 4vw;
+  background-color: #133a1b;
+  border: none;
+  border-radius: 12px;
+  width: 80%;
+  height: 18%;
   position: absolute;
-  bottom: -18px;
+  bottom: -10%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 @media (min-width: 768px) {
   .home-popular-product {
-    width: 28%;
+    width: 32%;
+  }
+
+  .home-popular-product button {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-popular-product {
+    width: 24%;
+  }
+
+  .home-popular-product button {
+    font-size: 2vw;
   }
 }

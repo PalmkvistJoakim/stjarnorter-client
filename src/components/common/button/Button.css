@@ -3,22 +3,31 @@
   color: white;
   border: none;
   cursor: pointer;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 12px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
+  .button {
+    width: 100%;
+  }
+
   .button button {
-    font-size: 16px;
-    min-width: 160px;
-    min-height: 40px;
-    border-radius: 12px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .button button {
+    width: 340px;
   }
 }
 
 @media (min-width: 1024px) {
-  .button button {
-    font-size: 24px;
-    min-width: 200px;
-    min-height: 60px;
-    border-radius: 16px;
+  .button {
+    display: none;
   }
 }
+
+/* #899e8d; */
