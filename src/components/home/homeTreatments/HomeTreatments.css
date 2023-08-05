@@ -11,20 +11,20 @@
 
 .home-treatments-image img {
   width: 100%;
-  height: 20vh;
+  height: 16vh;
   object-fit: cover;
 }
 
 .home-treatments-image h1 {
   position: absolute;
-  top: 36px;
-  font-size: 22px;
+  top: 22px;
+  font-size: 20px;
   color: #011b10;
 }
 
 .home-treatments-image p {
   position: absolute;
-  bottom: 20px;
+  bottom: 12px;
   font-size: 16px;
   color: #011b10;
 }
@@ -48,12 +48,12 @@
 
 .home-treatments-container button {
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #133a1b;
   border: none;
   border-radius: 12px;
-  width: 38vw;
-  height: 46px;
+  width: 32vw;
+  height: 36px;
 }
 
 @media (max-width: 767px) {
