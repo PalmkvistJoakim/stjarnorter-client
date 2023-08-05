@@ -5,7 +5,7 @@
 
 .home-background img {
   width: 100%;
-  height: 30vh;
+  height: 20vh;
   object-fit: cover;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .home-background-content p {
-  font-size: 22px;
+  font-size: 20px;
   color: #011b10;
 }
 

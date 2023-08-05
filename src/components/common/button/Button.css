@@ -3,14 +3,14 @@
   color: white;
   border: none;
   cursor: pointer;
-  height: 50px;
-  font-size: 22px;
+  height: 40px;
+  font-size: 18px;
   border-radius: 12px;
 }
 
 @media (max-width: 767px) {
   .button {
-    width: 100%;
+    width: 50vw;
   }
 
   .button button {
