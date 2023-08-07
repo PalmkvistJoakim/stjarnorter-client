@@ -8,6 +8,7 @@ function HomeTreatments() {
   const renderTreatments = () => {
     return treatments.map((treatment) => (
       <HomeTreatment
+        key={treatment.name}
         name={treatment.name}
         description={treatment.shortDescription}
         logo={treatment.logo}
@@ -20,9 +21,10 @@ function HomeTreatments() {
         <img src="images/shutterstock_1705833508.jpg" />
         <h1>Våra behandlingar</h1>
         <p>
-          Genom naturliga metoder och örtbaserade produkter skapar vi en
-          djupgående balans för kropp och själ, för att ge dig ökat
-          välbefinnande och inre harmoni.
+          Genom naturliga metoder och örtbaserade produkter
+          <br /> skapar vi en djupgående balans för kropp och själ,
+          <br />
+          för att ge dig ökat välbefinnande och inre harmoni.
         </p>
       </div>
       <div className="home-treatments-container">

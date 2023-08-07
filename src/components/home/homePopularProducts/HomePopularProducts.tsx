@@ -1,23 +1,25 @@
 import "./HomePopularProducts.css";
 import HomePopularProduct from "./homePopularProduct/HomePopularProduct";
+import { getProducts } from "../../../services/products";
+import { getCategories } from "../../../services/categories";
 
 function HomePopularProducts() {
   const renderPopularProducts = () => {
-    const popularProducts = [
-      { name: "Strålande", path: "/butik", img: "images/Inate2-1.jpg" },
-      { name: "Rörelse", path: "/butik", img: "images/Inate2-1.jpg" },
-      { name: "Grillkrydda", path: "/butik", img: "images/Inate2-1.jpg" },
-      { name: "Grillkrydda", path: "/butik", img: "images/Inate2-1.jpg" },
-    ];
+    const products = getProducts();
+    const categories = getCategories();
 
-    return popularProducts.map((product) => (
-      <HomePopularProduct
-        name={product.name}
-        path={product.path}
-        img={product.img}
-      />
+    const filterCategories = categories.map((category) =>
+      products.filter((product) => product.category.name === category.name)
+    );
+
+    const oneProduct = filterCategories.map((product) => product[0]);
+
+    return oneProduct.map((product) => (
+      <HomePopularProduct key={product._id} product={product} />
     ));
   };
+
+  renderPopularProducts();
 
   return (
     <div className="home-popular-products">

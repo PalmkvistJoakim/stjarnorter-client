@@ -12,6 +12,6 @@ export interface IProduct {
   img: string;
   description: string;
   contents: string;
-  size: IProductSizeOption[];
+  sizes: IProductSizeOption[];
   category: ICategory;
 }

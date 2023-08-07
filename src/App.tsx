@@ -25,7 +25,7 @@ function App() {
         <Route path="/behandlingar" element={<Treatments />} />
         <Route path="/om" element={<About />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

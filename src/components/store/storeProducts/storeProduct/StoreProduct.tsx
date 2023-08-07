@@ -9,7 +9,7 @@ interface StoreProductProps {
 }
 
 function StoreProduct({ product }: StoreProductProps) {
-  const { img, size, path } = product;
+  const { img, sizes, path } = product;
 
   return (
     <div className="store-product">
@@ -19,7 +19,7 @@ function StoreProduct({ product }: StoreProductProps) {
         </div>
         <StoreProductText product={product} />
       </Link>
-      <StoreProductSelect size={size} />
+      <StoreProductSelect sizes={sizes} />
       <button>LÄGG I VARUKORG</button>
     </div>
   );

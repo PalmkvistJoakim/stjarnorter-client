@@ -2,15 +2,15 @@ import { IProductSizeOption } from "../../../../../interfaces/IProduct";
 import "./StoreProductSelect.css";
 
 interface StoreProductSelectProps {
-  size: IProductSizeOption[];
+  sizes: IProductSizeOption[];
 }
 
-function StoreProductSelect({ size }: StoreProductSelectProps) {
+function StoreProductSelect({ sizes }: StoreProductSelectProps) {
   return (
     <select className="store-product-select">
       <option className="store-product-select-option">Välj storlek...</option>
-      {size.map((s) => (
-        <option>{s.weight}</option>
+      {sizes.map((size) => (
+        <option>{size.weight}</option>
       ))}
     </select>
   );

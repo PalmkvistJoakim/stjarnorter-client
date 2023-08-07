@@ -12,33 +12,31 @@
   background-color: #011b10;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  width: 80vw;
+  height: 70vw;
 }
 
 .home-about-owner-description p {
-  padding: 5% 10%;
-  padding-top: 80px;
-  font-size: 12px;
+  font-size: 3vw;
   color: white;
+  width: 60vw;
 }
 
 @media (max-width: 767px) {
   .home-about-owner {
     display: flex;
+    margin-top: 220px;
     justify-content: center;
-    margin-top: 270px;
-  }
-
-  .home-about-owner-description {
-    max-width: 280px;
   }
 
   .home-about-owner img {
     position: absolute;
-    top: -56%;
+    top: -190px;
     left: 50%;
     transform: translateX(-50%);
-    max-width: 70%;
-    height: 36vh;
+    width: 60vw;
+    height: 240px;
   }
 }
 
