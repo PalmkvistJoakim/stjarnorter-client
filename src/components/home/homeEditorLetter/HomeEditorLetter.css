@@ -13,8 +13,14 @@
   color: #133a1b;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .home-editor-letter p {
-    font-size: 30px;
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-editor-letter p {
+    font-size: 2.4vw;
   }
 }

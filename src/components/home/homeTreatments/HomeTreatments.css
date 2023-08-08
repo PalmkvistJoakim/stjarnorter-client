@@ -1,12 +1,9 @@
 .home-treatments {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .home-treatments-image {
   position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 .home-treatments-image img {
@@ -23,8 +20,6 @@
 }
 
 .home-treatments-image p {
-  position: absolute;
-  top: 14vw;
   font-size: 3.5vw;
   color: #011b10;
 }
@@ -33,8 +28,6 @@
   padding: 0% 5%;
   margin: 20px 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .home-treatments-inner-container {
@@ -56,34 +49,76 @@
   height: 36px;
 }
 
-@media (max-width: 1023px) {
-  .home-treatments-description {
-    align-items: center;
-    text-align: center;
-  }
-}
-
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   .home-treatments {
-    margin-top: 40px;
-  }
-
-  .home-treatments-image img {
-    height: 40vh;
+    margin-top: 8vw;
   }
 
   .home-treatments-image h1 {
-    font-size: 26px;
-    top: 70px;
+    font-size: 3.5vw;
   }
 
   .home-treatments-image p {
-    max-width: 440px;
-    font-size: 26px;
-    bottom: 40px;
+    font-size: 3vw;
   }
 
   .home-treatments-inner-container {
-    justify-content: space-around;
+    margin-bottom: 4vw;
+  }
+}
+
+@media (min-width: 667px) {
+  .home-treatments-container button {
+    height: 5vw;
+  }
+}
+
+@media (max-width: 1023px) {
+  .home-treatments-image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .home-treatments-image p {
+    position: absolute;
+    top: 14vw;
+  }
+
+  .home-treatments-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-treatments-image h1 {
+    top: 24vw;
+    padding: 0% 5%;
+  }
+
+  .home-treatments-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 27vw;
+  }
+
+  .home-treatments-info p {
+    font-size: 2.4vw;
+    width: 28vw;
+  }
+
+  .home-treatments-container {
+    justify-content: space-between;
+  }
+
+  .home-treatments-inner-container {
+    justify-content: space-between;
+    width: 54vw;
+  }
+
+  .home-treatments-container button {
+    width: 24vw;
   }
 }

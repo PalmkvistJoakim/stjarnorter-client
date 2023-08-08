@@ -34,38 +34,23 @@
   -webkit-box-orient: vertical;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 667px) {
   .home-treatment {
-    width: 40%;
-  }
-
-  .home-treatment-container {
-    width: 100%;
+    width: 22.6vw;
   }
 
   .home-treatment-container img {
-    width: 18%;
+    width: 4.5vw;
   }
 
   .home-treatment-container p {
-    font-size: 16px;
+    font-size: 1.8vw;
   }
 
   .home-treatment-description p {
-    font-size: 16px;
+    font-size: 1.8vw;
   }
 }
 
 @media (min-width: 1024px) {
-  .home-treatment-container img {
-    width: 20%;
-  }
-
-  .home-treatment-container p {
-    font-size: 18px;
-  }
-
-  .home-treatment-description p {
-    font-size: 20px;
-  }
 }

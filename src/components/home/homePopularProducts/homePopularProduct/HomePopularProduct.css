@@ -74,20 +74,46 @@
 
 @media (min-width: 768px) {
   .home-popular-product {
-    width: 32%;
+    width: 26%;
+    padding: 3vw 3%;
   }
 
-  .home-popular-product button {
-    font-size: 2.5vw;
+  .home-popular-product img {
+    height: 28vw;
+  }
+
+  .home-popular-product-select {
+    height: 4vw;
+  }
+
+  .home-popular-product-footer {
+    height: 4vw;
+  }
+
+  .home-popular-product-links p {
+    font-size: 14px;
+  }
+
+  .home-popular-product-links h1 {
+    font-size: 18px;
   }
 }
 
 @media (min-width: 1024px) {
   .home-popular-product {
-    width: 24%;
+    width: 20%;
+    padding: 2vw 2%;
   }
 
-  .home-popular-product button {
-    font-size: 1.8vw;
+  .home-popular-product img {
+    height: 22vw;
+  }
+
+  .home-popular-product-select {
+    height: 3vw;
+  }
+
+  .home-popular-product-footer {
+    height: 3vw;
   }
 }

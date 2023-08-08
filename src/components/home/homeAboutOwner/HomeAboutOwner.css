@@ -5,6 +5,8 @@
 
 .home-about-owner img {
   object-fit: cover;
+  width: 60vw;
+  height: 240px;
 }
 
 .home-about-owner-description {
@@ -12,7 +14,6 @@
   background-color: #011b10;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
   width: 80vw;
   height: 70vw;
 }
@@ -26,8 +27,8 @@
 @media (max-width: 767px) {
   .home-about-owner {
     display: flex;
-    margin-top: 240px;
     justify-content: center;
+    margin-top: 240px;
   }
 
   .home-about-owner img {
@@ -35,18 +36,38 @@
     top: -190px;
     left: 50%;
     transform: translateX(-50%);
-    width: 60vw;
-    height: 240px;
+  }
+
+  .home-about-owner-description {
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 500px) {
+  .home-about-owner img {
+    width: 300px;
+  }
+
+  .home-about-owner-description {
+    width: 400px;
+    height: 350px;
+  }
+
+  .home-about-owner-description p {
+    font-size: 15px;
+    width: 300px;
   }
 }
 
 @media (min-width: 768px) {
   .home-about-owner {
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
 
   .home-about-owner img {
     width: 50%;
+    height: 80%;
   }
 
   .home-about-owner-description {
@@ -58,7 +79,17 @@
   }
 
   .home-about-owner-description p {
-    padding: 12% 12%;
-    font-size: 2vw;
+    font-size: 14.5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .home-about-owner {
+    margin-bottom: 16vw;
+  }
+
+  .home-about-owner-description p {
+    width: 360px;
+    font-size: 18px;
   }
 }
