@@ -1,13 +1,11 @@
 import "./StoreProducts.css";
 import { useParams } from "react-router-dom";
 import BackgroundWithDescription from "../../common/backgroundWithDescription/BackgroundWithDescription";
-import { getProducts } from "../../../services/products";
-import StoreProduct from "./storeProduct/StoreProduct";
 import { useEffect } from "react";
+import Products from "../../common/products/Products";
 
 function StoreProducts() {
   const { categoryName } = useParams();
-  const products = getProducts();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -18,7 +16,7 @@ function StoreProducts() {
       label: "Örtteer",
       path: "örtteer",
       description:
-        "Upptäck vårt unika sortiment av örtteer för chakrasystemet. Inspirerade av de gamla siarnas visdom från Indien, har vi skapat teer som främjar balans i kroppens energicentra - chakra. Varje te är noggrant sammansatt för att stärka de organ som är kopplade till varje livshjul. Njut av en kopp örtte i lugn och ro, med medvetenheten om att våra teer enbart består av naturliga råvaror. Ge dig själv den omtanke du förtjänar och låt våra örtteer bidra till ett hälsosamt välmående.",
+        "Upptäck vårt unika sortiment av örtteer för chakrasystemet. Inspirerade av de gamla siarnas visdom från Indien, har vi skapat teer som främjar balans i kroppens energicentra - chakra. Varje te är noggrant sammansatt för att stärka de organ som är kopplade till varje livshjul.",
       img: "images/MensesCrampEliminator_1800x1200.webp",
     },
     {
@@ -59,17 +57,12 @@ function StoreProducts() {
       );
   };
 
-  const renderProducts = (categoryName: string | undefined) => {
-    const filterProducts = products.filter(
-      (product) => product.category.path === `/${categoryName}`
-    );
-    return filterProducts.map((product) => <StoreProduct product={product} />);
-  };
-
   return (
     <>
       {renderDescriptions(categoryName)}
-      <div className="store-products">{renderProducts(categoryName)}</div>
+      <div className="store-products">
+        <Products page="store" />
+      </div>
     </>
   );
 }

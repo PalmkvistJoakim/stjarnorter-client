@@ -5,8 +5,8 @@
 }
 
 .store-category img {
-  width: 650px;
-  height: 450px;
+  width: 43vw;
+  height: 30vw;
   object-fit: cover;
   border-radius: 5%;
 }
@@ -14,7 +14,7 @@
 .store-category p {
   position: absolute;
   bottom: 10%;
-  font-size: 40px;
+  font-size: 14px;
   font-weight: bold;
   color: white;
 }

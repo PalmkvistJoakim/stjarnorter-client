@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   background-color: #b7bf96;
+  /* margin-bottom: 60px; */
 }
 
 .navbar-container {

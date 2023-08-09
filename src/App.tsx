@@ -16,13 +16,13 @@ function App() {
       <Routes>
         <Route path="/stjarnorter-client/" element={<Home />} />
         <Route path="/" element={<Home />} />
-        {/* <Route path="/butik" element={<Store />} />
+        <Route path="/butik" element={<Store />} />
         <Route path="/butik/:categoryName" element={<StoreProducts />} />
         <Route
           path="/butik/:categoryName/:productName"
           element={<StoreProductPage />}
         />
-        <Route path="/behandlingar" element={<Treatments />} />
+        {/* <Route path="/behandlingar" element={<Treatments />} />
         <Route path="/om" element={<About />} /> */}
       </Routes>
       <Footer />

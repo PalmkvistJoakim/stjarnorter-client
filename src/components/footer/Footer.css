@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  /* margin-top: 60px; */
   background-color: #b7bf96;
   color: #011b10;
   padding: 5% 5%;
