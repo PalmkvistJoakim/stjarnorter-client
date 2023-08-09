@@ -2,10 +2,6 @@
   margin-top: 40px;
 }
 
-.home-treatments-image {
-  position: relative;
-}
-
 .home-treatments-image::before {
   content: "";
   position: absolute;
@@ -24,6 +20,10 @@
   z-index: 0;
 }
 
+.home-treatments-image {
+  position: relative;
+}
+
 .home-treatments-image h1,
 .home-treatments-image p {
   position: relative;
@@ -38,8 +38,10 @@
 }
 
 .home-treatments-image p {
+  position: absolute;
   font-size: 3vw;
   color: #011b10;
+  bottom: 6vw;
 }
 
 .home-treatments-container {
@@ -69,15 +71,20 @@
 
 @media (min-width: 500px) {
   .home-treatments {
-    margin-top: 8vw;
+    margin-top: 7vw;
+  }
+
+  .home-treatments-image img {
+    height: 24vw;
   }
 
   .home-treatments-image h1 {
-    font-size: 3.5vw;
+    font-size: 3vw;
   }
 
   .home-treatments-image p {
-    font-size: 3vw;
+    font-size: 2.7vw;
+    bottom: 4vw;
   }
 
   .home-treatments-inner-container {
@@ -100,7 +107,7 @@
 
   .home-treatments-image p {
     position: absolute;
-    top: 14vw;
+    /* top: 14vw; */
   }
 
   .home-treatments-container {

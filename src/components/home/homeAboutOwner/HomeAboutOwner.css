@@ -63,7 +63,7 @@
 @media (min-width: 768px) {
   .home-about-owner {
     margin-top: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 18vw;
   }
 
   .home-about-owner img {
@@ -80,7 +80,7 @@
   }
 
   .home-about-owner-description p {
-    font-size: 14.5px;
+    font-size: 2vw;
   }
 }
 

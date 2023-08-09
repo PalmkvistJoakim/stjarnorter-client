@@ -1,5 +1,10 @@
 const categories = [
-  { _id: "10", name: "Örtteer", path: "/örtteer", img: "images/Inate2-1.jpg" },
+  {
+    _id: "10",
+    name: "Örtteer",
+    path: "/örtteer",
+    img: "./images/Inate2-1.jpg",
+  },
   {
     _id: "11",
     name: "Kryddor",
