@@ -16,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/stjarnorter-client/" element={<Home />} />
         <Route path="/" element={<Home />} />
+        <Route path="/stjarnorter-client/butik" element={<Store />} />
         <Route path="/butik" element={<Store />} />
         <Route path="/butik/:categoryName" element={<StoreProducts />} />
         <Route
