@@ -1,8 +1,16 @@
 .store-categories {
   display: flex;
   justify-content: space-between;
+  width: 90%;
   flex-wrap: wrap;
-  gap: 24px 0px;
-  padding: 0px 5%;
-  margin-top: 60px;
+  gap: 2vw 0px;
+  margin: 8vw 0vw;
+}
+
+@media (min-width: 1500px) {
+  .store-categories {
+    background-color: yellow;
+    width: 1350px;
+    gap: 30px 0px;
+  }
 }

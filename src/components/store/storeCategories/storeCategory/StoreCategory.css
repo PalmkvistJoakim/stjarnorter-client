@@ -18,3 +18,22 @@
   font-weight: bold;
   color: white;
 }
+
+@media (min-width: 768px) {
+  .store-category p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .store-category p {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .store-category img {
+    width: 646px;
+    height: 451px;
+  }
+}

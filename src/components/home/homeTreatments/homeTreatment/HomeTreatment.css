@@ -1,7 +1,8 @@
 .home-treatment {
   display: flex;
   flex-direction: column;
-  width: 150px;
+  /* width: 150px; */
+  max-width: 41%;
 }
 
 .home-treatment-container {
@@ -22,6 +23,7 @@
 
 .home-treatment-description {
   margin-top: 6px;
+  max-width: 149px;
 }
 
 .home-treatment-description p {
@@ -34,7 +36,7 @@
   -webkit-box-orient: vertical;
 }
 
-@media (min-width: 667px) {
+@media (min-width: 663px) {
   .home-treatment {
     width: 22.6vw;
   }
@@ -47,10 +49,25 @@
     font-size: 1.8vw;
   }
 
+  .home-treatment-description {
+    max-width: 100%;
+  }
+
   .home-treatment-description p {
     font-size: 1.8vw;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1500px) {
+  .home-treatment-container img {
+    width: 67px;
+  }
+
+  .home-treatment-container p {
+    font-size: 27px;
+  }
+
+  .home-treatment-description p {
+    font-size: 27px;
+  }
 }

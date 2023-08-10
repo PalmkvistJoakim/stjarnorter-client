@@ -24,3 +24,14 @@
     font-size: 2.4vw;
   }
 }
+
+@media (min-width: 1500px) {
+  .home-editor-letter {
+    width: 1200px;
+    height: 228px;
+  }
+
+  .home-editor-letter p {
+    font-size: 36px;
+  }
+}

@@ -60,7 +60,7 @@ function Footer() {
               <h1>PRODUKTER</h1>
               {renderCategories()}
             </div>
-            <div style={{ paddingTop: "21px" }}>
+            <div style={{ paddingTop: "20px" }}>
               <h1>BEHANDLINGAR</h1>
               {renderTreatments()}
             </div>

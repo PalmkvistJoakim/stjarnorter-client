@@ -1,5 +1,5 @@
 .product {
-  width: 38%;
+  width: 39%;
   background-color: #f1f1f1;
   padding: 5vw 5%;
 }
@@ -215,5 +215,11 @@
 
   .product-footer {
     height: 3vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .product img {
+    height: 330px;
   }
 }

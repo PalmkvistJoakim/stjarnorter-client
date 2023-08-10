@@ -23,7 +23,7 @@ function StoreProducts() {
       label: "Kryddor",
       path: "kryddor",
       description:
-        "Upptäck vår kollektion av varsamt hanterade örter, kryddor och salter - en naturlig smaksättning för din mat. Här finner du enbart äkta och naturliga ingredienser, utan smakförstärkare eller konstgjorda aromämnen. Vi delar ditt intresse för örternas läkande kraft och tillreder våra blandningar med omsorg, där örterna blir mer än bara kryddor. Ge din matlagning en extra touch av naturlig godhet och välj våra hälsosamma kryddor och salter. Låt smakerna av naturen berika din matupplevelse.",
+        "Upptäck vår kollektion av varsamt hanterade örter, kryddor och salter - en naturlig smaksättning för din mat. Här finner du enbart äkta och naturliga ingredienser, utan smakförstärkare eller konstgjorda aromämnen. Vi delar ditt intresse för örternas läkande kraft och tillreder våra blandningar med omsorg, där örterna blir mer än bara kryddor.",
       img: "images/MensesCrampEliminator_1800x1200.webp",
     },
     {
@@ -37,7 +37,7 @@ function StoreProducts() {
       label: "Örtblandningar",
       path: "örtblandningar",
       description:
-        "Utforska vårt urval av färdiga örtblandningar, noggrant komponerade för olika behov och problem. Våra örter är varsamt pulveriserade för ökad upptagningsförmåga i kroppen och kan med fördel användas av både människor och hästar. Till häst blandas örtblandningen i fodret, medan du som människa kan tillsätta den i din morgonfil eller smoothie. Behöver du vägledning? Vi erbjuder rådgivning via mail för att hjälpa dig hitta rätt blandning för ditt djurs behov. Våra örtblandningar är registrerade som fodertillskott hos Jordbruksverket.",
+        "Utforska vårt urval av färdiga örtblandningar, noggrant komponerade för olika behov och problem. Våra örter är varsamt pulveriserade för ökad upptagningsförmåga i kroppen och kan med fördel användas av både människor och hästar. Till häst blandas örtblandningen i fodret, medan du som människa kan tillsätta den i din morgonfil eller smoothie. ",
       img: "images/MensesCrampEliminator_1800x1200.webp",
     },
   ];
@@ -58,13 +58,15 @@ function StoreProducts() {
   };
 
   return (
-    <>
+    <div className="store-products">
       {renderDescriptions(categoryName)}
-      <div className="store-products">
+      <div className="store-products-container">
         <Products page="store" />
       </div>
-    </>
+    </div>
   );
 }
 
 export default StoreProducts;
+
+// Behöver du vägledning? Vi erbjuder rådgivning via mail för att hjälpa dig hitta rätt blandning för ditt djurs behov. Våra örtblandningar är registrerade som fodertillskott hos Jordbruksverket.

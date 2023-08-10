@@ -45,7 +45,6 @@
 }
 
 .home-treatments-container {
-  padding: 0% 5%;
   margin: 20px 0px;
   display: flex;
 }
@@ -55,7 +54,7 @@
   flex-wrap: wrap;
   gap: 20px 0px;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
   margin-bottom: 20px;
 }
 
@@ -118,8 +117,19 @@
 }
 
 @media (min-width: 1024px) {
+  .home-treatments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-treatments-image {
+    width: 100%;
+  }
+
   .home-treatments-image h1 {
-    top: 24vw;
+    top: 19vw;
     padding: 0% 5%;
   }
 
@@ -137,6 +147,7 @@
 
   .home-treatments-container {
     justify-content: space-between;
+    width: 90%;
   }
 
   .home-treatments-inner-container {
@@ -146,5 +157,31 @@
 
   .home-treatments-container button {
     width: 24vw;
+    font-size: 2vw;
+  }
+}
+
+@media (min-width: 1500px) {
+  .home-treatments-container {
+    width: 1350px;
+  }
+
+  .home-treatments-inner-container {
+    width: 812px;
+  }
+
+  .home-treatments-info {
+    height: 405px;
+  }
+
+  .home-treatments-info p {
+    max-width: 420px;
+    font-size: 36px;
+  }
+
+  .home-treatments-container button {
+    width: 360px;
+    height: 76px;
+    font-size: 30px;
   }
 }

@@ -1,6 +1,7 @@
 .home-background {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .home-background img {
@@ -69,8 +70,8 @@
     max-width: 24.5%;
   }
 
-  .home-background p {
+  .home-background-content p {
     color: white;
-    font-size: 2vw;
+    font-size: 1.8vw;
   }
 }
