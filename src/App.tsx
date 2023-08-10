@@ -20,11 +20,15 @@ function App() {
         <Route path="/butik" element={<Store />} />
         <Route path="/butik/:categoryName" element={<StoreProducts />} />
         <Route
+          path="/stjarnorter-client/butik/:categoryName/:productName"
+          element={<StoreProductPage />}
+        />
+        <Route
           path="/butik/:categoryName/:productName"
           element={<StoreProductPage />}
         />
-        {/* <Route path="/behandlingar" element={<Treatments />} />
-        <Route path="/om" element={<About />} /> */}
+        <Route path="/behandlingar" element={<Treatments />} />
+        {/* <Route path="/om" element={<About />} /> */}
       </Routes>
       <Footer />
     </div>

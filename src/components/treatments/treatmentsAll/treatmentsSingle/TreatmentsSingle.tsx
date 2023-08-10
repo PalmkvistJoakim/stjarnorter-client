@@ -9,11 +9,18 @@ function TreatmentsSingle({ treatment }: TreatmentsSingleProps) {
   const { img, name, shortDescription, longDescription } = treatment;
   return (
     <div className="treatments-single">
-      <img src={img} />
-      <h1>{name}</h1>
+      <div className="treatments-single-image">
+        <img src={img} />
+        <h1>{name}</h1>
+      </div>
       <div className="treatments-single-description">
-        <p style={{ fontWeight: "bold" }}>{shortDescription}</p>
-        <p>{longDescription}</p>
+        <p
+          className="treatments-single-shortdescription"
+          style={{ fontWeight: "bold", marginBottom: "6px" }}
+        >
+          {shortDescription}
+        </p>
+        <p className="treatments-single-longdescription">{longDescription}</p>
       </div>
       <button>Bokningsförfrågan</button>
     </div>

@@ -13,7 +13,7 @@ function Treatments() {
   const treatmentsDescription = {
     label: "Behandlingar",
     description:
-      "Utforska våra holistiska behandlingar för kropp och själ. Med en passion för örter, djur och olika behandlingsformer erbjuder vi en unik upplevelse på Själens Stjärna. Vår grundares 20-åriga erfarenhet inom örtmedicin och terapiformer som bowenterapi, bonitologi och kraniosakralterapi säkerställer skräddarsydda behandlingsprogram för att främja balans och läkning. Vi sätter den enskilda individen i fokus och tror på kroppens läkekraft. Kom och upptäck en värld av helande och välbefinnande hos oss på Själens Stjärna. Priserna finner du längst ner på sidan.",
+      "Utforska våra holistiska behandlingar för kropp och själ. Med en passion för örter, djur och olika behandlingsformer erbjuder vi en unik upplevelse på Själens Stjärna. Vår grundares 20-åriga erfarenhet inom örtmedicin och terapiformer som bowenterapi, bonitologi och kraniosakralterapi säkerställer skräddarsydda behandlingsprogram för att främja balans och läkning. Vi sätter den enskilda individen i fokus och tror på kroppens läkekraft.",
     img: "images/MensesCrampEliminator_1800x1200.webp",
   };
   return (

@@ -25,7 +25,7 @@ function TreatmentsAll() {
         {renderTreatments(firstFourTreatments)}
       </div>
       <img src="images/INA40-1.jpg" />
-      <div className="treatments-all-remaining">
+      <div className="treatments-all-four">
         {renderTreatments(remainingTreatments)}
       </div>
     </div>

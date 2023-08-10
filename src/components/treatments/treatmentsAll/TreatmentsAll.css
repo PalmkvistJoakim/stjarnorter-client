@@ -1,24 +1,24 @@
 .treatments-all {
-  margin-top: 120px;
+  margin-top: 11vw;
+  width: 90%;
+}
+
+.treatments-all-four {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 8vw;
+  margin-bottom: 9vw;
+  gap: 4vw 0vw;
 }
 
 .treatments-all img {
   width: 100%;
-  height: 800px;
+  height: 30vw;
   object-fit: cover;
 }
 
-.treatments-all-four {
-  margin: 0px 5%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 100px;
-  margin-bottom: 160px;
-}
-
 .treatments-all-remaining {
-  margin: 160px 5%;
   display: flex;
   justify-content: space-between;
 }
