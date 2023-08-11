@@ -16,7 +16,11 @@ function MobileHeaders({
 
   const renderHeaders = () => {
     return headers.map((header) => (
-      <Link className="mobile-headers-links" to={header.path}>
+      <Link
+        onClick={closeMobileHeaders}
+        className="mobile-headers-links"
+        to={header.path}
+      >
         {header.label}
       </Link>
     ));
@@ -29,7 +33,9 @@ function MobileHeaders({
   return (
     <div className="mobile-headers">
       <div className="mobile-headers-navbar">
-        <img src="images/Stjarnorter_logga1.png" />
+        <Link onClick={closeMobileHeaders} to="/">
+          <img src="images/Stjarnorter_logga1.png" />
+        </Link>
         <p onClick={closeMobileHeaders}>X</p>
       </div>
       <div className="mobile-headers-headers">{renderHeaders()}</div>

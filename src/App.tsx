@@ -8,6 +8,7 @@ import StoreProducts from "./components/store/storeProducts/StoreProducts";
 import StoreProductPage from "./components/store/storeProductPage/StoreProductPage";
 import Treatments from "./components/treatments/Treatments";
 import About from "./components/about/About";
+import Courses from "./components/courses/Courses";
 
 function App() {
   return (
@@ -27,8 +28,13 @@ function App() {
           path="/butik/:categoryName/:productName"
           element={<StoreProductPage />}
         />
+        <Route path="/kurser" element={<Courses />} />
+        <Route
+          path="/stjarnorter-client/behandlingar"
+          element={<Treatments />}
+        />
         <Route path="/behandlingar" element={<Treatments />} />
-        {/* <Route path="/om" element={<About />} /> */}
+        <Route path="/om" element={<About />} />
       </Routes>
       <Footer />
     </div>

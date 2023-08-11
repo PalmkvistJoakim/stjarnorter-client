@@ -2,6 +2,7 @@ import "./HomeTreatments.css";
 import HomeTreatment from "./homeTreatment/HomeTreatment";
 import { getTreatments } from "../../../services/treatments";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function HomeTreatments() {
   const treatments = getTreatments();
@@ -58,7 +59,11 @@ function HomeTreatments() {
         <div className="home-treatments-inner-container">
           {renderTreatments()}
         </div>
-        {!isDesktop && <button>Läs mer</button>}
+        {!isDesktop && (
+          <Link to="/behandlingar">
+            <button>Läs mer</button>
+          </Link>
+        )}
       </div>
     </div>
   );
