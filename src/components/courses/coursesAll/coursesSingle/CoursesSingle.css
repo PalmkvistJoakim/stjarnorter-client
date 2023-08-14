@@ -5,7 +5,7 @@
   position: relative;
 }
 
-/* .courses-single::before {
+.courses-single.overlay::before {
   content: "";
   position: absolute;
   top: 0;
@@ -14,7 +14,7 @@
   height: 100%;
   background-color: rgba(152, 152, 152, 0.81);
   z-index: 1;
-} */
+}
 
 .courses-single img {
   width: 40%;

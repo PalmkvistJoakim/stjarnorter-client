@@ -19,8 +19,14 @@ function CoursesSingle({ course }: CoursesSingleProps) {
     color,
   } = course;
 
+  const isDone =
+    name === "Regndroppsterapi" ||
+    name === "Naturlig Djurfriskvård" ||
+    name === "Den vilda trädgården" ||
+    name === "Yoga och vandring med ätbara vilda växter";
+
   return (
-    <div className="courses-single">
+    <div className={`courses-single ${isDone && "overlay"}`}>
       <img src={img} />
       <div
         className="courses-single-container"

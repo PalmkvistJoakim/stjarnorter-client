@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./HomeBackground.css";
-import HomeBackgroundLinks from "./homeBackgroundLinks/HomeBackgroundLinks";
+import "./HomePresentation.css";
+import NavigationButton from "../../common/navigationButton/NavigationButton";
 
-function HomeBackground() {
+function HomePresentation() {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
 
   useEffect(() => {
@@ -18,10 +18,10 @@ function HomeBackground() {
   }, []);
 
   return (
-    <div className="home-background">
+    <div className="home-presentation">
       <img src="images/2023-231.jpg" />
-      <div className="home-background-container">
-        <div className="home-background-content">
+      <div className="home-presentation-container">
+        <div className="home-presentation-content">
           <p>
             Upplev Hälsa & Harmoni!
             {!isDesktop && <br />}
@@ -32,10 +32,26 @@ function HomeBackground() {
             chakrasystemet.
           </p>
         </div>
-        <HomeBackgroundLinks />
+        <div className="home-presentation-buttons">
+          <NavigationButton
+            label="Produkter"
+            path="/butik"
+            location="homePresentation"
+          />
+          <NavigationButton
+            label="Kurser"
+            path="/kurser"
+            location="homePresentation"
+          />
+          <NavigationButton
+            label="Behandlingar"
+            path="/behandlingar"
+            location="homePresentation"
+          />
+        </div>
       </div>
     </div>
   );
 }
 
-export default HomeBackground;
+export default HomePresentation;

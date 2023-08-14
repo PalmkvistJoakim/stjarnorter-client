@@ -1,11 +1,11 @@
 import "./Home.css";
-import HomeBackground from "./homeBackground/HomeBackground";
 import HomeProductsDescription from "./homeProductsDescription/HomeProductsDescription";
 import HomePopularProducts from "./homePopularProducts/HomePopularProducts";
 import HomeTreatments from "./homeTreatments/HomeTreatments";
 import HomeEditorLetter from "./homeEditorLetter/HomeEditorLetter";
 import HomeAboutOwner from "./homeAboutOwner/HomeAboutOwner";
 import { useEffect } from "react";
+import HomePresentation from "./homePresentation/HomePresentation";
 
 function Home() {
   useEffect(() => {
@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <div className="home">
-      <HomeBackground />
+      <HomePresentation />
       {/* <HomeProductsDescription /> */}
       <HomePopularProducts />
       <HomeEditorLetter />

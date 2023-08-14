@@ -1,0 +1,19 @@
+.navigation-button button {
+  background-color: #133a1b;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+.homePresentation button {
+  width: 70vw;
+  height: 46px;
+}
+
+@media (min-width: 768px) {
+  .homePresentation button {
+    width: 340px;
+  }
+}
