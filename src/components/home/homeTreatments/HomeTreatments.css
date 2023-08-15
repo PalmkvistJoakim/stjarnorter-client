@@ -1,5 +1,5 @@
 .home-treatments {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .home-treatments-image::before {
@@ -45,7 +45,7 @@
 }
 
 .home-treatments-container {
-  margin: 20px 0px;
+  margin-top: 20px;
   display: flex;
 }
 

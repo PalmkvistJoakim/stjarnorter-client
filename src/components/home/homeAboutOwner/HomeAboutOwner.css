@@ -29,7 +29,7 @@
   .home-about-owner {
     display: flex;
     justify-content: center;
-    margin-top: 240px;
+    margin-top: 220px;
   }
 
   .home-about-owner img {
@@ -45,6 +45,10 @@
 }
 
 @media (min-width: 500px) {
+  .home-about-owner {
+    margin-top: 260px;
+  }
+
   .home-about-owner img {
     width: 300px;
     height: 260px;
