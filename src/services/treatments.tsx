@@ -5,7 +5,7 @@ const treatments = [
     shortDescription:
       "Bowenterapin, ursprungligen från Australien, är en korrigerande och balanserande kroppsterapi olik alla andra.",
     longDescription: (
-      <div>
+      <>
         <p>
           Med mjuka grepp över specifika punkter på kroppen påverkas muskler,
           leder, bindväv, nervsystem och meridianer på ett positivt sätt.
@@ -27,7 +27,7 @@ const treatments = [
         <p style={{ fontWeight: "bold" }}>
           Bowenterapi passar människor och DJUR i alla åldrar.
         </p>
-      </div>
+      </>
     ),
     logo: "images/Stjarnorter_logga1.png",
     img: "images/shutterstock_1705833508.jpg",

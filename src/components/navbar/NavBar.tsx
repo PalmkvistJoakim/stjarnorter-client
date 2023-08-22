@@ -2,26 +2,16 @@ import "./NavBar.css";
 import { NavLink, Link } from "react-router-dom";
 import { MenuOutlined, ShoppingCartOutlined } from "@mui/icons-material/";
 import { getHeaders } from "../../services/headers";
-import { useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import MobileHeaders from "./mobileHeaders/MobileHeaders";
+import Cart from "../cart/Cart";
+import { ResizeContext } from "../../context/ResizeContext";
 
 function NavBar() {
   const headers = getHeaders();
-
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
+  const { isMobile } = useContext(ResizeContext);
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1023);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const [showCart, setShowCart] = useState(false);
 
   const renderHeaders = () => {
     return headers.map((header) => (
@@ -33,6 +23,10 @@ function NavBar() {
 
   const handleMobileHeaders = () => {
     setShowMobileNavbar(!showMobileNavbar);
+  };
+
+  const handleCart = () => {
+    setShowCart(!showCart);
   };
 
   return (
@@ -55,7 +49,9 @@ function NavBar() {
         </Link>
         <div className="navbar-headers">
           {!isMobile && renderHeaders()}
+          {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
           <ShoppingCartOutlined
+            onClick={handleCart}
             style={{
               fontSize: "30px",
               color: "white",

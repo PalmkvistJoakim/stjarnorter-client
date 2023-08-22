@@ -1,21 +1,10 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import "./HomePresentation.css";
 import NavigationButton from "../../common/navigationButton/NavigationButton";
+import { ResizeContext } from "../../../context/ResizeContext";
 
 function HomePresentation() {
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const { isDesktop } = useContext(ResizeContext);
 
   return (
     <div className="home-presentation">

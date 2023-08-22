@@ -63,6 +63,10 @@
     justify-content: space-evenly;
   }
 
+  .footer-behandlingar {
+    padding-top: 20px;
+  }
+
   .footer-logo {
     width: 300px;
   }

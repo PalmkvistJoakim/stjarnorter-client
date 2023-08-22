@@ -1,24 +1,13 @@
 import "./HomeTreatments.css";
 import HomeTreatment from "./homeTreatment/HomeTreatment";
 import { getTreatments } from "../../../services/treatments";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { ResizeContext } from "../../../context/ResizeContext";
 
 function HomeTreatments() {
   const treatments = getTreatments();
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const { isDesktop } = useContext(ResizeContext);
 
   const renderTreatments = () => {
     return treatments.map((treatment) => (

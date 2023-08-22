@@ -14,4 +14,5 @@ export interface IProduct {
   contents: string;
   sizes: IProductSizeOption[];
   category: ICategory;
+  selectedWeight?: IProductSizeOption;
 }

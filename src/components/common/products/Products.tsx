@@ -1,9 +1,10 @@
 import "./Products.css";
 import { getProducts } from "../../../services/products";
 import { getCategories } from "../../../services/categories";
-import { useEffect, useState } from "react";
-import Product from "./product/Product";
+import { ResizeContext } from "../../../context/ResizeContext";
 import { useParams } from "react-router-dom";
+import { useContext } from "react";
+import Product from "./product/Product";
 
 interface ProductsProps {
   page: "popular" | "store" | "single";
@@ -13,21 +14,9 @@ function Products({ page }: ProductsProps) {
   const products = getProducts();
   const categories = getCategories();
   const { categoryName } = useParams();
-  const [isIpad, setIsIpad] = useState(
-    window.innerWidth >= 768 && window.innerWidth <= 1023
-  );
+  const { isIpad } = useContext(ResizeContext);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsIpad(window.innerWidth >= 768 && window.innerWidth <= 1023);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //Här ska vi sätta in populära produkter istället..
 
   const renderPopularProducts = () => {
     const numProductsToDisplay = isIpad ? 3 : 4;
@@ -57,23 +46,12 @@ function Products({ page }: ProductsProps) {
     ));
   };
 
-  // const filterCategories = categories.map((category) =>
-  //   products.filter((product) => product.category.name === category.name)
-  // );
-
-  // const oneProduct = filterCategories.map((product) => product[0]);
-
-  // return oneProduct.map((product) => (
-  //   <HomePopularProduct key={product._id} product={product} />
-  // ));
-  // };
-
   const renderProducts = (categoryName: string | undefined) => {
     const filterProducts = products.filter(
       (product) => product.category.path === `/${categoryName}`
     );
     return filterProducts.map((product) => (
-      <Product product={product} page="store" />
+      <Product key={product._id} product={product} page="store" />
     ));
   };
 

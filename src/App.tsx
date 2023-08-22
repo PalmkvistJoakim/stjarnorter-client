@@ -9,34 +9,40 @@ import StoreProductPage from "./components/store/storeProductPage/StoreProductPa
 import Treatments from "./components/treatments/Treatments";
 import About from "./components/about/About";
 import Courses from "./components/courses/Courses";
+import { CartProvider } from "./context/CartContext";
+import { ResizeProvider } from "./context/ResizeContext";
 
 function App() {
   return (
     <div className="app">
-      <NavBar />
-      <Routes>
-        <Route path="/stjarnorter-client/" element={<Home />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/stjarnorter-client/butik" element={<Store />} />
-        <Route path="/butik" element={<Store />} />
-        <Route path="/butik/:categoryName" element={<StoreProducts />} />
-        <Route
-          path="/stjarnorter-client/butik/:categoryName/:productName"
-          element={<StoreProductPage />}
-        />
-        <Route
-          path="/butik/:categoryName/:productName"
-          element={<StoreProductPage />}
-        />
-        <Route path="/kurser" element={<Courses />} />
-        <Route
-          path="/stjarnorter-client/behandlingar"
-          element={<Treatments />}
-        />
-        <Route path="/behandlingar" element={<Treatments />} />
-        <Route path="/om" element={<About />} />
-      </Routes>
-      <Footer />
+      <ResizeProvider>
+        <CartProvider>
+          <NavBar />
+          <Routes>
+            <Route path="/stjarnorter-client/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/stjarnorter-client/butik" element={<Store />} />
+            <Route path="/butik" element={<Store />} />
+            <Route path="/butik/:categoryName" element={<StoreProducts />} />
+            <Route
+              path="/stjarnorter-client/butik/:categoryName/:productName"
+              element={<StoreProductPage />}
+            />
+            <Route
+              path="/butik/:categoryName/:productName"
+              element={<StoreProductPage />}
+            />
+            <Route path="/kurser" element={<Courses />} />
+            <Route
+              path="/stjarnorter-client/behandlingar"
+              element={<Treatments />}
+            />
+            <Route path="/behandlingar" element={<Treatments />} />
+            <Route path="/om" element={<About />} />
+          </Routes>
+        </CartProvider>
+        <Footer />
+      </ResizeProvider>
     </div>
   );
 }

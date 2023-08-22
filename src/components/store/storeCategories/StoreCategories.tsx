@@ -8,6 +8,7 @@ function StoreCategories() {
   const renderCategories = () => {
     return categories.map((category) => (
       <StoreCategory
+        key={category._id}
         name={category.name}
         path={category.path}
         img={category.img}

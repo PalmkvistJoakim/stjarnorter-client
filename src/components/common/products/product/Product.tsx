@@ -1,8 +1,11 @@
 import "./Product.css";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useContext, useState } from "react";
+import { CartContext } from "../../../../context/CartContext";
+import { ResizeContext } from "../../../../context/ResizeContext";
 import { IProduct, IProductSizeOption } from "../../../../interfaces/IProduct";
-import { Link } from "react-router-dom";
+import { IProductCart } from "../../../../interfaces/ICart";
 import { AddShoppingCartOutlined } from "@mui/icons-material/";
+import { Link } from "react-router-dom";
 
 interface ProductProps {
   product: IProduct;
@@ -12,19 +15,9 @@ interface ProductProps {
 function Product({ product, page }: ProductProps) {
   const [selectedWeight, setSelectedWeight] =
     useState<IProductSizeOption | null>(null);
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const [selectedWeightError, setSelectedWeightError] = useState(false);
+  const { order, setOrder } = useContext(CartContext);
+  const { isDesktop } = useContext(ResizeContext);
 
   const { path, img, category, name, sizes, description, contents } = product;
 
@@ -40,7 +33,10 @@ function Product({ product, page }: ProductProps) {
 
   const renderSelect = () => {
     return (
-      <select onChange={handleSelectChange} className="product-select">
+      <select
+        onChange={handleSelectChange}
+        className={`product-select ${selectedWeightError ? "error" : ""}`}
+      >
         <option value="">Välj storlek...</option>
         {sizes.map((size, index) => (
           <option
@@ -61,6 +57,99 @@ function Product({ product, page }: ProductProps) {
       return product.sizes[0].price;
     }
   };
+
+  // const addToCart = (product: IProduct) => {
+  //   if (selectedWeight) {
+  //     const productToAdd: IProductCart = {
+  //       ...product,
+  //       selectedWeight: selectedWeight,
+  //       quantity: 1,
+  //     };
+
+  //     const existingProductWithWeightIndex = order.products.findIndex(
+  //       (product) =>
+  //         product._id === productToAdd._id &&
+  //         product.selectedWeight?.weight === productToAdd.selectedWeight?.weight
+  //     );
+
+  //     if (existingProductWithWeightIndex !== -1) {
+  //       const existingProductWithWeight = order.products[
+  //         existingProductWithWeightIndex
+  //       ] as IProductCart;
+  //       existingProductWithWeight.quantity += 1;
+
+  //       const updatedProducts = [...order.products];
+  //       updatedProducts[existingProductWithWeightIndex] =
+  //         existingProductWithWeight;
+
+  //       setOrder({ ...order, products: updatedProducts });
+  //     } else {
+  //       setOrder({
+  //         ...order,
+  //         products: [...order.products, productToAdd],
+  //       });
+  //     }
+  //   } else {
+  //     setSelectedWeightError(!selectedWeightError);
+  //     setTimeout(() => {
+  //       setSelectedWeightError(false);
+  //     }, 200);
+  //   }
+  // };
+
+  const addToCart = (product: IProduct) => {
+    if (!selectedWeight) {
+      handleSelectedWeightError();
+      return;
+    }
+
+    const productToAdd: IProductCart = {
+      ...product,
+      selectedWeight: selectedWeight,
+      quantity: 1,
+    };
+
+    const existingProductIndex = findExistingProductIndex(productToAdd);
+
+    if (existingProductIndex !== -1) {
+      incrementProductQuantity(existingProductIndex);
+    } else {
+      addNewProductToCart(productToAdd);
+    }
+  };
+
+  const handleSelectedWeightError = () => {
+    setSelectedWeightError(!selectedWeightError);
+    setTimeout(() => {
+      setSelectedWeightError(false);
+    }, 200);
+  };
+
+  const findExistingProductIndex = (productToAdd: IProductCart) => {
+    return order.products.findIndex(
+      (product) =>
+        product._id === productToAdd._id &&
+        product.selectedWeight?.weight === productToAdd.selectedWeight?.weight
+    );
+  };
+
+  const incrementProductQuantity = (index: number) => {
+    const existingProductWithWeight = order.products[index] as IProductCart;
+    existingProductWithWeight.quantity += 1;
+
+    const updatedProducts = [...order.products];
+    updatedProducts[index] = existingProductWithWeight;
+
+    setOrder({ ...order, products: updatedProducts });
+  };
+
+  const addNewProductToCart = (newProduct: IProductCart) => {
+    setOrder({
+      ...order,
+      products: [...order.products, newProduct],
+    });
+  };
+
   return (
     <div className={`product ${page}`}>
       <div className="product-container">
@@ -96,6 +185,7 @@ function Product({ product, page }: ProductProps) {
             </div>
             <div className="product-cart">
               <AddShoppingCartOutlined
+                onClick={() => addToCart(product)}
                 style={{ color: "White", fontSize: "20px" }}
               />
             </div>
@@ -171,8 +261,3 @@ function Product({ product, page }: ProductProps) {
 }
 
 export default Product;
-
-// <p className="product-category">{category.name}</p>
-// <h1>{name}</h1>
-// PRIS - storlek sidan om select eller "knappar"
-//Lägg i varukorg

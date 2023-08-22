@@ -17,6 +17,7 @@ function MobileHeaders({
   const renderHeaders = () => {
     return headers.map((header) => (
       <Link
+        key={header.label}
         onClick={closeMobileHeaders}
         className="mobile-headers-links"
         to={header.path}
@@ -39,6 +40,15 @@ function MobileHeaders({
         <p onClick={closeMobileHeaders}>X</p>
       </div>
       <div className="mobile-headers-headers">{renderHeaders()}</div>
+      <div className="mobile-headers-cart">
+        <Link
+          className="mobile-headers-links"
+          to="/varukorg"
+          style={{ fontSize: "14px" }}
+        >
+          Varukorg ()
+        </Link>
+      </div>
     </div>
   );
 }
