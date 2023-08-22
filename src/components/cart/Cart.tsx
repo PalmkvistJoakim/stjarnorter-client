@@ -46,8 +46,10 @@ function Cart({ showCart, setShowCart }: CartProps) {
   return (
     <div className="cart">
       <div className="cart-top">
-        <p>Varukorg ({totalProducts})</p>
-        <p onClick={handleCloseCart}>X</p>
+        <div className="cart-top-container">
+          <p>Varukorg ({totalProducts})</p>
+          <p onClick={handleCloseCart}>X</p>
+        </div>
       </div>
       <div className="cart-products">
         {products.length === 0 ? (
@@ -56,10 +58,19 @@ function Cart({ showCart, setShowCart }: CartProps) {
           renderCartProducts()
         )}
       </div>
-      <div className="cart-products-bottom">
-        <div className="cart-products-total">
-          <p>Totalt</p>
+      <div className="cart-bottom">
+        <div className="cart-bottom-price">
+          <p>Produkter</p>
           <p>{totalPrice(products)} kr</p>
+        </div>
+        <div className="cart-bottom-price">
+          <p>Frakt</p>
+          <p>kr</p>
+        </div>
+        <p>kr kvar till fri frakt</p>
+        <div className="cart-bottom-price">
+          <h1>Totalt</h1>
+          <h1>kr</h1>
         </div>
       </div>
     </div>

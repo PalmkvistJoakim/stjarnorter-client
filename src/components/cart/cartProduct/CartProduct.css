@@ -2,14 +2,24 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 20px;
+}
+
+.cart-product:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
 }
 
 .cart-product img {
-  width: 40%;
+  width: 100px;
+  height: 120px;
+  margin-right: 10px;
+  object-fit: cover;
 }
 
 .cart-product-container {
-  width: 56%;
+  width: 53vw;
 }
 
 .cart-product-container h1 {
@@ -41,4 +51,10 @@
   background-color: #133a1b;
   color: white;
   cursor: pointer;
+}
+
+@media (min-width: 556px) {
+  .cart-product {
+    width: 400px;
+  }
 }
