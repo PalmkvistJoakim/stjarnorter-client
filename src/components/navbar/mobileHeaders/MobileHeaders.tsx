@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { getHeaders } from "../../../services/headers";
 import "./MobileHeaders.css";
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useContext } from "react";
+import { CartContext } from "../../../context/CartContext";
 
 interface MobileHeadersProps {
   showMobileNavbar: boolean;
@@ -13,6 +14,7 @@ function MobileHeaders({
   setShowMobileNavbar,
 }: MobileHeadersProps) {
   const headers = getHeaders();
+  const { totalProducts } = useContext(CartContext);
 
   const renderHeaders = () => {
     return headers.map((header) => (
@@ -46,7 +48,7 @@ function MobileHeaders({
           to="/varukorg"
           style={{ fontSize: "14px" }}
         >
-          Varukorg ()
+          Varukorg ({totalProducts})
         </Link>
       </div>
     </div>

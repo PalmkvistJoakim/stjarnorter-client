@@ -34,6 +34,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 20px 0px;
+  overflow-y: auto;
+  max-height: calc(100% - 200px);
+  flex-shrink: 100;
 }
 
 .cart-bottom {
@@ -43,12 +46,31 @@
   width: 100%;
   margin-top: auto;
   background-color: #b7bf96;
+  padding: 20px 0px;
 }
 
 .cart-bottom-price {
   display: flex;
   width: 90%;
   justify-content: space-between;
+}
+
+.cart-bottom-price-shipping {
+  display: flex;
+  justify-content: end;
+  width: 90%;
+  font-size: 14px;
+}
+
+.cart-bottom button {
+  background-color: #133a1b;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  color: white;
+  width: 72vw;
+  height: 50px;
+  margin-top: 20px;
 }
 
 @media (min-width: 556px) {

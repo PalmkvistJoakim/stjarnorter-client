@@ -1,7 +1,7 @@
 import { ICategory } from "./ICategory";
 
 export interface IProductSizeOption {
-  weight: string;
+  weight: number;
   price: number;
 }
 

@@ -7,8 +7,8 @@ const products = [
     description: "För en god start på dagen.",
     contents: "pepparmynta, rosblad, ringblomma, ingefära",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -27,8 +27,8 @@ const products = [
     contents:
       "maskros, brännäslla, apelsinskal, ingefära, gullris, björkblad, bovete, pepparmynta",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -45,8 +45,8 @@ const products = [
     description: "Främjar en god magfunktion. Förebygger gasiga magar.",
     contents: "pepparmynta, kamomill, fänkål",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -64,8 +64,8 @@ const products = [
     contents:
       "munkpeppar, passionsblomma, citronmeliss, hagtorn, daggkåpa, jasminblomma, johannesört, hibiskus",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -83,8 +83,8 @@ const products = [
     contents:
       "läkemalva, isop, fläder, kamomill, lakritsrot, kungssljus, svart vinbärsblad, timjan",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -102,8 +102,8 @@ const products = [
     contents:
       "passionsblomma, kamomill, lindblomma, hagtorn, citronmeliss, valeriana, lavendel",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -121,8 +121,8 @@ const products = [
     contents:
       "pepparmynta, hibiskus, styvmorsviol, apelsinskal, svart vinbärsblad",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -140,8 +140,8 @@ const products = [
     contents:
       "svart ekologiskt ceylonte, ingefära, pepparmynta, rosblad, ringblomma, svart vinbärsblad",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -159,8 +159,8 @@ const products = [
     contents:
       "rött ekologiskt rooiboste, passionsblomma, kamomill, lindblomma, hagtorn, citronmeliss, valeriana, lavendel",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -178,8 +178,8 @@ const products = [
     contents:
       "rött ekologiskt rooiboste, gult te, kardemumma, kanel, svart vinbärsblad",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -196,8 +196,8 @@ const products = [
     description: "Rött te med äkta smak av jordgubb och vanilj.",
     contents: "",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -214,8 +214,8 @@ const products = [
     description: "Rött te med äkta smak av äpple och vanilj.",
     contents: "",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -232,8 +232,8 @@ const products = [
     description: "Grönt te med äkta smak av citron och honung.",
     contents: "",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -251,8 +251,8 @@ const products = [
     contents:
       "passionsblomma, hibiskus, kamomill, granatäppleblomma, nyponskal, lakritsrot",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -270,8 +270,8 @@ const products = [
     contents:
       "lindblomma, morot, apelsinskal, munkpeppar, fläder, ingefära, kanel",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -288,8 +288,8 @@ const products = [
     description: "Bukspottskörteln.",
     contents: "solros, pepparmynta, citronmeliss, stjärnanis, fänkål",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -306,8 +306,8 @@ const products = [
     description: "Brässen.",
     contents: "hagtorn, nässla, svart vinbärsblad, rosblad, nyponskal",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -324,8 +324,8 @@ const products = [
     description: "Sköldkörteln.",
     contents: "eucalyptusblad, blåbär, isop, kungsljus, blåklint, lavendel",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -343,8 +343,8 @@ const products = [
     contents:
       "blå malva, citrongräs, kamomill, koriander, kanel, rosblad, munkpeppar",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -362,8 +362,8 @@ const products = [
     contents:
       "ingefära, jasminblomma, pepparmynta, salvia, fläder, ljungblomma, björnbärsblad",
     sizes: [
-      { weight: "60-70g (Påse)", price: 79 },
-      { weight: "100-125g (Burk)", price: 135 },
+      { weight: 60, price: 79 },
+      { weight: 125, price: 135 },
     ],
     category: {
       _id: "10",
@@ -381,8 +381,8 @@ const products = [
     contents:
       "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 50, price: 65 },
     ],
     category: {
       _id: "11",
@@ -400,8 +400,8 @@ const products = [
     contents:
       "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 50, price: 65 },
     ],
     category: {
       _id: "11",
@@ -420,8 +420,8 @@ const products = [
     contents:
       "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 50, price: 65 },
     ],
     category: {
       _id: "11",
@@ -438,8 +438,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -456,8 +456,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -474,8 +474,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -492,8 +492,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -510,8 +510,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -528,8 +528,8 @@ const products = [
     description: "",
     contents: "100% rent flingsalt blandat med olika örter.",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -547,8 +547,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -566,8 +566,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -586,8 +586,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -605,8 +605,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -624,8 +624,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -643,8 +643,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -662,8 +662,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -681,8 +681,8 @@ const products = [
     contents:
       "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
     sizes: [
-      { weight: "(Påse)", price: 50 },
-      { weight: "(Burk)", price: 65 },
+      { weight: 35, price: 50 },
+      { weight: 60, price: 65 },
     ],
     category: {
       _id: "11",
@@ -700,8 +700,8 @@ const products = [
       "En stärkande och skyddande creme för ansiktet samt för dig med eksem, klåda ellerbrännsår. För hund används den på hotspot och små sår. Används fördelaktigt som dagceme i ansiktet. Doftar underbart!",
     contents: "ringblomma, bivax, nattljusolja, havtornsolja, zink, kamomill",
     sizes: [
-      { weight: "30ml", price: 190 },
-      { weight: "50ml", price: 270 },
+      { weight: 30, price: 190 },
+      { weight: 50, price: 270 },
     ],
     category: {
       _id: "12",
@@ -720,8 +720,8 @@ const products = [
     contents:
       "vetegroddsolja, ringblomsolja, litsea cubeba, kokosolja, havtornsolja",
     sizes: [
-      { weight: "30ml", price: 65 },
-      { weight: "50ml", price: 115 },
+      { weight: 30, price: 65 },
+      { weight: 50, price: 115 },
     ],
     category: {
       _id: "12",
@@ -739,8 +739,8 @@ const products = [
       "En välgörande balsam för trötta och stela muskler. Denna balsam är värmande och gör gott efter träning eller i massage.",
     contents: "",
     sizes: [
-      { weight: "30ml", price: 65 },
-      { weight: "50ml", price: 115 },
+      { weight: 30, price: 65 },
+      { weight: 50, price: 115 },
     ],
     category: {
       _id: "12",
@@ -758,9 +758,9 @@ const products = [
       "Mugg är en hudinflammation i karleden som uppkommer när den känsliga huden skadas av ex smuts, fukt eller skav. Kraftig mugg kan orsaka hälta men andra symtom kan vara ömhet, svullnad, värmeökning, rodnad. Muggsalvan lindrar och förebygger samt verkar hämande för bakterier. Den är mjukgörande och stärkande. ",
     contents: "mandelolja, tistelolja, ringblomsolja, bivax, eteriska oljor",
     sizes: [
-      { weight: "50ml", price: 90 },
-      { weight: "100ml", price: 150 },
-      { weight: "250ml", price: 350 },
+      { weight: 50, price: 90 },
+      { weight: 100, price: 150 },
+      { weight: 250, price: 350 },
     ],
     category: {
       _id: "12",
@@ -779,9 +779,9 @@ const products = [
     contents:
       "salvia, kummin, nässla, kamomill , anis, pepparmynta, fänkål, dillfrö, physaliumfrö, timjan, valeriana, bockhornsklöver, persilja, kanel",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -799,9 +799,9 @@ const products = [
       "Främjar en god rörlighet i muskler och leder. Används vid akuta problem med överansträngning i muskler, leder och senor. Vid långvaringa problem rek. Leder/Muskler i ca 4 veckor och därefter övergå till Rörelse föra att biehålla elasticitet.",
     contents: "gurkmeja, djävulsklo, msm, vildnypon, nässla, snärjmåra",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -820,9 +820,9 @@ const products = [
     contents:
       "gullris, maskros, timjan, kelp, alfalfa, nypon, gurkmeja, nässla, ingefära, djävulsklo, gul senap, stor kardborre, snärjmåra, bovete, björkblad",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -841,9 +841,9 @@ const products = [
     contents:
       "djävulsklo, alfalfa, nässla, kamomill, pepparmynta, bockhornsklöver, physaliumfrö, timjan, kelp, maskros, gullris, gurkmeja, anis, fänkål, kummin, senap, kanel, salvia, dillfrö, björkblad, snärjmåra, valeriana, ingefära, nypon, persilja",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -862,9 +862,9 @@ const products = [
     contents:
       "kamomill, valeriana, citronmeliss, hagtorn,  munkpeppar, mejram, lindblomma, passionsblomma",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -883,9 +883,9 @@ const products = [
     contents:
       "timjan, lakritsrot, kamomill, salvia, isop, isländsk mossa, älgört, åkerfräken, läkemalva, pepparmynta, bockhornsklöver, rosmarin, fläderblomma",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -904,9 +904,9 @@ const products = [
     contents:
       "munkpeppar, spirulina, gurkmeja, djävulsklo, msm, vildnypon, nässla",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -924,9 +924,9 @@ const products = [
       "En blandning som består av massor med spännande bär, frukter, alger och örter. Främjar en god blodsockerbalans.",
     contents: "",
     sizes: [
-      { weight: "125g", price: 240 },
-      { weight: "300g", price: 370 },
-      { weight: "500g", price: 660 },
+      { weight: 125, price: 240 },
+      { weight: 300, price: 370 },
+      { weight: 500, price: 660 },
     ],
     category: {
       _id: "12",
@@ -945,9 +945,9 @@ const products = [
     contents:
       "kvickrot, kelp, bovete, snärjmåra, brännässla. Örterna är naturligt rika på kisel, kalcium, kalium, järn, magnesium, zink, jod, vit -a, b, c, p.",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",
@@ -965,9 +965,9 @@ const products = [
       "En örtblandning som förebygger parasiter och främjar en god tarmflora. Ges i en kur på 5 dagar var 3:e månad.",
     contents: "rödalmsbark, kvassia, fänkål, ålandsrot",
     sizes: [
-      { weight: "125g", price: 200 },
-      { weight: "250g", price: 350 },
-      { weight: "500g", price: 600 },
+      { weight: 125, price: 200 },
+      { weight: 250, price: 350 },
+      { weight: 500, price: 600 },
     ],
     category: {
       _id: "12",

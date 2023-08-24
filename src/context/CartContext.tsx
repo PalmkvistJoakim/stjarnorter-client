@@ -11,6 +11,7 @@ import { IOrder, IProductCart } from "../interfaces/ICart";
 interface ICartContext {
   order: IOrder;
   setOrder: Dispatch<SetStateAction<IOrder>>;
+  totalProducts: number;
 }
 
 export const CartContext = createContext<ICartContext>({
@@ -21,6 +22,7 @@ export const CartContext = createContext<ICartContext>({
     products: [] as IProductCart[],
   },
   setOrder: () => {},
+  totalProducts: 0,
 });
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
@@ -31,8 +33,14 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     products: [] as IProductCart[],
   });
 
+  let totalProducts = 0;
+
+  order.products.forEach((product) => {
+    totalProducts += product.quantity;
+  });
+
   return (
-    <CartContext.Provider value={{ order, setOrder }}>
+    <CartContext.Provider value={{ order, setOrder, totalProducts }}>
       {children}
     </CartContext.Provider>
   );
