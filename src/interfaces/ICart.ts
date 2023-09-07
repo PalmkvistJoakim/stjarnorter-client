@@ -5,9 +5,23 @@ export interface IProductCart extends IProduct {
   selectedWeight: IProductSizeOption;
 }
 
-export interface IOrder {
+export interface ICustomer {
+  eMail: string;
   name: string;
-  address: string;
   phone: string;
+  address: string;
+  zipCode: string;
+  city: string;
+}
+
+export interface ISummary {
+  totalQuantity: number;
+  shippingCost: number;
+  totalAmount: number;
+}
+
+export interface IOrder {
+  customer: ICustomer;
   products: IProductCart[];
+  summary: ISummary;
 }

@@ -11,6 +11,7 @@ import About from "./components/about/About";
 import Courses from "./components/courses/Courses";
 import { CartProvider } from "./context/CartContext";
 import { ResizeProvider } from "./context/ResizeContext";
+import Checkout from "./components/cart/checkout/Checkout";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             />
             <Route path="/behandlingar" element={<Treatments />} />
             <Route path="/om" element={<About />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CartProvider>
         <Footer />

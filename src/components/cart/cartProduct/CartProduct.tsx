@@ -10,7 +10,6 @@ interface CartProductProps {
 function CartProduct({ product }: CartProductProps) {
   const { img, category, name, selectedWeight, quantity } = product;
   const { order, setOrder } = useContext(CartContext);
-  console.log(product);
 
   const incrementQuantity = () => {
     product.quantity++;
