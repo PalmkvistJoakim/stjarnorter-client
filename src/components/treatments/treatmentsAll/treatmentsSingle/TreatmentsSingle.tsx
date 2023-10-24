@@ -1,12 +1,31 @@
 import { ITreatment } from "../../../../interfaces/ITreatment";
 import "./TreatmentsSingle.css";
+import { useState } from "react";
 
 interface TreatmentsSingleProps {
   treatment: ITreatment;
 }
 
 function TreatmentsSingle({ treatment }: TreatmentsSingleProps) {
-  const { img, name, shortDescription, longDescription } = treatment;
+  const { img, name, description } = treatment;
+  const [readMore, setReadMore] = useState(false);
+
+  const toggleReadMore = () => {
+    setReadMore(!readMore);
+  };
+
+  function openEmailWindow() {
+    const email = "jockepalmkvist@gmail.com";
+
+    const subject = `Bokningsförfrågan: ${treatment.name}`;
+
+    const body = `Hej, vad kul att du är intresserad av ${treatment.name}-behandling. Skriv ett förslag på datum och tid så återkommer jag. /Catharina`;
+
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+    window.open(mailtoLink);
+  }
+
   return (
     <div className="treatments-single">
       <div className="treatments-single-image">
@@ -15,14 +34,22 @@ function TreatmentsSingle({ treatment }: TreatmentsSingleProps) {
       </div>
       <div className="treatments-single-description">
         <p
-          className="treatments-single-shortdescription"
-          style={{ fontWeight: "bold", marginBottom: "6px" }}
+          style={{
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            display: "-webkit-box",
+            WebkitLineClamp: readMore ? "inherit" : 14,
+            WebkitBoxOrient: "vertical",
+          }}
         >
-          {shortDescription}
+          {description}
         </p>
-        <p className="treatments-single-longdescription">{longDescription}</p>
       </div>
-      <button>Bokningsförfrågan</button>
+      {!readMore ? (
+        <button onClick={toggleReadMore}>Läs mer och boka</button>
+      ) : (
+        <button onClick={openEmailWindow}>Bokningsförfrågan</button>
+      )}
     </div>
   );
 }

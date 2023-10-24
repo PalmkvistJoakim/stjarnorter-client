@@ -38,7 +38,7 @@ const descriptions = [
     label: "Kurser",
     path: "/kurser",
     description:
-      "Jag har även kurser, bara så du vet. blabllalblalblalblfnjsnjsnfjsn fdnsfnsjlf ndsjf ndsjf nsdjkfn sdjkfn sdjkfn sdjkfn djkfns jkfnd sjdkfn jkl",
+      "Utforska vägen till ökad medvetenhet, balans och hälsa genom våra inspirerande kurser och workshops. Catharina Ehlo delar med sig av sin djupa kunskap och erfarenhet inom naturmedicin, energiterapi, och regndroppsmassage. Våra kurser inkluderar energiterapeututbildning, 6-stegskurs och regndroppsmassage, och hålls på vackra platser som gården, Ecotopia på Österlen och Grevlunda Yoga i Vitaby. Oavsett om du är nybörjare eller vill fördjupa din kunskap, är du välkommen att utforska den spännande världen av helande och välmående med oss.",
     img: "images/MensesCrampEliminator_1800x1200.webp",
   },
   {

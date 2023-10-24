@@ -1,7 +1,7 @@
 import "./HomeTreatments.css";
 import HomeTreatment from "./homeTreatment/HomeTreatment";
 import { getTreatments } from "../../../services/treatments";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { ResizeContext } from "../../../context/ResizeContext";
 
@@ -14,7 +14,7 @@ function HomeTreatments() {
       <HomeTreatment
         key={treatment.name}
         name={treatment.name}
-        description={treatment.shortDescription}
+        description={treatment.description}
         logo={treatment.logo}
       />
     ));

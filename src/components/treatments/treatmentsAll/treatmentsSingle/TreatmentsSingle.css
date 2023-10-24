@@ -15,14 +15,14 @@
   display: flex;
   justify-content: center;
   width: 84%;
+  position: relative;
 }
 
 .treatments-single-image::before {
   content: "";
   position: absolute;
   top: 0;
-  left: 8%;
-  width: 84%;
+  width: 100%;
   height: 18vw;
   background-color: rgba(183, 191, 150, 0.8);
   z-index: 1;
@@ -40,7 +40,7 @@
 
 .treatments-single h1 {
   position: absolute;
-  top: 12%;
+  top: 34%;
   font-size: 3vw;
   font-weight: bold;
   z-index: 2;
@@ -55,22 +55,6 @@
 
 .treatments-single-description p {
   font-size: 2vw;
-}
-
-.treatments-single-shortdescription {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-}
-
-.treatments-single-longdescription {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 10;
-  -webkit-box-orient: vertical;
 }
 
 .treatments-single button {

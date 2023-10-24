@@ -4,6 +4,7 @@ import "./Checkout.css";
 import { CartContext } from "../../../context/CartContext";
 import Input from "../../common/input/Input";
 import axios from "axios";
+import CartProduct from "../cartProduct/CartProduct";
 
 function Checkout() {
   const { order } = useContext(CartContext);
@@ -11,16 +12,12 @@ function Checkout() {
   const { eMail, name, phone, address, zipCode, city } = order.customer;
   const { totalAmount } = order.summary;
 
-  console.log(order);
-  console.log(order.customer);
-
   const handleCreatePayment = async () => {
     const { data } = await axios.post(
       "http://localhost:8000/api/stjarnorter/swishpayment",
       {
         amount: totalAmount,
         message: "Stjärnörter",
-        payerAlias: phone,
       }
     );
     console.log(data);
@@ -61,7 +58,9 @@ function Checkout() {
         {renderInput("Adress", "address", address, "T.ex. Gatunamn 1")}
         {renderInput("Postnummer", "zipCode", zipCode, "T.ex. 12345")}
         {renderInput("Stad", "city", city, "T.ex. Stockholm")}
-        <button onClick={handleCreatePayment}>POST</button>
+        <button onClick={handleCreatePayment}>
+          <img src="./images/Swish Logo Secondary Light-BG SVG.svg" />
+        </button>
       </div>
     </div>
   );

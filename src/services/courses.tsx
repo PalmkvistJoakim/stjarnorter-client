@@ -5,6 +5,7 @@ const courses = [
     name: "Energiterapiutbildning",
     date: "Ej fastställt",
     location: "Färlöv, (på min gård)",
+    book: "jockepalmkvist@gmail.com",
     description: (
       <p>
         En kurs i 6 steg där vi går igenom:
@@ -43,6 +44,7 @@ const courses = [
       </p>
     ),
     location: "Färlöv, (på min gård)",
+    book: "jockepalmkvist@gmail.com",
     description: (
       <p>
         I denna kurs lär du dig Regndroppsmassage som är en varsam och rogivande
@@ -69,6 +71,7 @@ const courses = [
     name: "Naturlig Djurfriskvård",
     date: "14 maj",
     location: "Österlen, Ecotopia",
+    book: "https://www.ecotopia.se/sv/",
     description: (
       <p>
         I denna kurs lär du dig vilka läkeväxter och homeopatiska medel du
@@ -90,6 +93,7 @@ const courses = [
     name: "Den vilda trädgården",
     date: "20 maj, 10.00-16.00",
     location: "Färlöv, (på min gård)",
+    book: "jockepalmkvist@gmail.com",
     description: (
       <p>
         Lär dig mer om vad som växer runt knuten, om vad som är ätbart och gott
@@ -115,6 +119,7 @@ const courses = [
       </p>
     ),
     location: "Österlen, Ecotopia",
+    book: "https://www.ecotopia.se/sv/",
     description: (
       <p>
         Denna dag går vi ut och botaniserar bland örter och vilda växter. Vi
@@ -135,6 +140,7 @@ const courses = [
     name: "Yoga och vandring med ätbara vilda växter",
     date: "11 juni",
     location: "Vitaby, Grevlunda Yoga",
+    book: "https://www.grevlundayoga.se/",
     description: (
       <p>
         Vi startar dagen med ett skönt Hatayogapass i en vacker studio. Mattor
@@ -156,6 +162,7 @@ const courses = [
     name: "Örtmedicin steg 1",
     date: "12 augusti",
     location: "Österlen, Ecotopia",
+    book: "https://www.ecotopia.se/sv/",
     description: (
       <p>
         Nu är det hög tid att börja plocka örter och sammanställa sitt eget
@@ -181,6 +188,7 @@ const courses = [
     name: "Örtmedicin steg 2",
     date: "13 augusti",
     location: "Österlen, Ecotopia",
+    book: "https://www.ecotopia.se/sv/",
     description: (
       <p>
         Under många år har Catharina Ehlo varit kursledare för fullbokade

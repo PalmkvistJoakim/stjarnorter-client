@@ -2,7 +2,7 @@ import "./HomeTreatment.css";
 
 interface HomeTreatmentProps {
   name: string;
-  description: string;
+  description: string | JSX.Element;
   logo: string;
 }
 

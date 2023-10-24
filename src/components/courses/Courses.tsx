@@ -1,13 +1,17 @@
 import BackgroundWithDescription from "../common/backgroundWithDescription/BackgroundWithDescription";
 import "./Courses.css";
-import CoursesAboutOwner from "./coursesAboutOwner/CoursesAboutOwner";
 import CoursesAll from "./coursesAll/CoursesAll";
+import { useEffect } from "react";
 
 function Courses() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const coursesDescription = {
     label: "Kurser",
     description:
-      "Jag har även kurser, bara så du vet. blabllalblalblalblfnjsnjsnfjsn fdnsfnsjlf ndsjf ndsjf nsdjkfn sdjkfn sdjkfn sdjkfn djkfns jkfnd sjdkfn jkl",
+      "Utforska vägen till ökad medvetenhet, balans och hälsa genom våra inspirerande kurser och workshops. Vi håller till på vackra platser som gården, Ecotopia på Österlen och Grevlunda Yoga i Vitaby. Oavsett om du är nybörjare eller vill fördjupa din kunskap, är du välkommen att utforska den spännande världen av helande och välmående med oss.",
     img: "images/MensesCrampEliminator_1800x1200.webp",
   };
 
@@ -18,7 +22,6 @@ function Courses() {
         description={coursesDescription.description}
         img={coursesDescription.img}
       />
-      <CoursesAboutOwner />
       <CoursesAll />
     </div>
   );

@@ -2,10 +2,13 @@ const treatments = [
   {
     name: "Bowenterapi",
     path: "/behandlingar",
-    shortDescription:
-      "Bowenterapin, ursprungligen från Australien, är en korrigerande och balanserande kroppsterapi olik alla andra.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Bowenterapin, ursprungligen från Australien, är en korrigerande och
+          balanserande kroppsterapi olik alla andra.
+        </p>
+        <br />
         <p>
           Med mjuka grepp över specifika punkter på kroppen påverkas muskler,
           leder, bindväv, nervsystem och meridianer på ett positivt sätt.
@@ -35,10 +38,14 @@ const treatments = [
   {
     name: "Andlig rådgivning",
     path: "/behandlingar",
-    shortDescription:
-      "Att vandra sin livsväg utan motgångar eller prövningar är få förunnat. Livet går på över berg och genom djupa dalar, genom ljus och mörker för att vi ska växa och bli medvetna varelser.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Att vandra sin livsväg utan motgångar eller prövningar är få förunnat.
+          Livet går på över berg och genom djupa dalar, genom ljus och mörker
+          för att vi ska växa och bli medvetna varelser.
+        </p>
+        <br />
         <p>
           Att göra livsresan på egen hand kan vara både tungt och svårt, en
           rådgivning kan vara ett sätt att få information till sig så man kan gå
@@ -69,10 +76,16 @@ const treatments = [
   {
     name: "Cranial Sacralterapi",
     path: "/behandlingar",
-    shortDescription:
-      "Cranio-sacral terapi utvecklades ur osteopatin av Dr John Upledger, Usa, men har sitt ursprung från den amerikanska läkaren William G Sutherland, som på 1920-talet upptäckte att hjärnan, hjärnhinnorna, ryggmärgen och korsbenet med sin vätska utgör ett slutet hydrauliskt system.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Cranio-sacral terapi utvecklades ur osteopatin av Dr John Upledger,
+          Usa, men har sitt ursprung från den amerikanska läkaren William G
+          Sutherland, som på 1920-talet upptäckte att hjärnan, hjärnhinnorna,
+          ryggmärgen och korsbenet med sin vätska utgör ett slutet hydrauliskt
+          system.
+        </p>
+        <br />
         <p>
           Detta system har, precis som det cardiovasculära, sin egen ”puls”.
           Terapin balanserar stress och trauman i bla nervsystemet, höfterna,
@@ -112,10 +125,14 @@ const treatments = [
   {
     name: "Aditikinesologi",
     path: "/behandlingar",
-    shortDescription:
-      "Balansering av kroppens energisystem! Aditimetoden är en mycket djupgående energibalanseringsteknik där kroppens samtliga energisystem balanseras.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Balansering av kroppens energisystem! Aditimetoden är en mycket
+          djupgående energibalanseringsteknik där kroppens samtliga energisystem
+          balanseras.
+        </p>
+        <br />
         <p>
           Den yttersta grundorsaken till allt lidande lokaliseras och
           elimineras.
@@ -151,10 +168,13 @@ const treatments = [
   {
     name: "Bonitologi",
     path: "/behandlingar",
-    shortDescription:
-      "Bonitologin hjälper dig att läka dig själv. Med kinesologi testas grundorsakerna till fysiska, mentala, emotionella eller andliga problem och ett behandlingsprogram skräddarsys för just dig.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Bonitologin hjälper dig att läka dig själv. Med kinesologi testas
+          grundorsakerna till fysiska, mentala, emotionella eller andliga
+          problem och ett behandlingsprogram skräddarsys för just dig.
+        </p>
         <br />
         <p>
           Din kropp visar själv exakt vad som krävs för att en läkningsprocess
@@ -183,10 +203,13 @@ const treatments = [
   {
     name: "Regndroppsteknik",
     path: "/behandlingar",
-    shortDescription:
-      "Regndroppsteknik är en behaglig, avstressande och djupgående massagemetod, där man använder sig av olika sorters eteriska oljor av mycket hög kvalité.",
-    longDescription: (
+    description: (
       <>
+        <p>
+          Regndroppsteknik är en behaglig, avstressande och djupgående
+          massagemetod, där man använder sig av olika sorters eteriska oljor av
+          mycket hög kvalité.
+        </p>
         <br />
         <p>
           Oljorna masseras in på föttterna med hjälp av vitaflexrörelser.

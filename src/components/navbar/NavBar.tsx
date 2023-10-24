@@ -6,12 +6,14 @@ import { useContext, useState } from "react";
 import MobileHeaders from "./mobileHeaders/MobileHeaders";
 import Cart from "../cart/Cart";
 import { ResizeContext } from "../../context/ResizeContext";
+import { CartContext } from "../../context/CartContext";
 
 function NavBar() {
   const headers = getHeaders();
   const { isMobile } = useContext(ResizeContext);
   const [showMobileNavbar, setShowMobileNavbar] = useState(false);
   const [showCart, setShowCart] = useState(false);
+  const { totalProducts } = useContext(CartContext);
 
   const renderHeaders = () => {
     return headers.map((header) => (
@@ -50,14 +52,19 @@ function NavBar() {
         <div className="navbar-headers">
           {!isMobile && renderHeaders()}
           {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
-          <ShoppingCartOutlined
-            onClick={handleCart}
-            style={{
-              fontSize: "30px",
-              color: "white",
-              cursor: "pointer",
-            }}
-          />
+          <div className="navbar-shopping">
+            <ShoppingCartOutlined
+              onClick={handleCart}
+              style={{
+                fontSize: "30px",
+                color: "white",
+                cursor: "pointer",
+              }}
+            />
+            {totalProducts > 0 && (
+              <div className="navbar-cart">{totalProducts}</div>
+            )}
+          </div>
         </div>
       </div>
     </div>

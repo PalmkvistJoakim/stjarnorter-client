@@ -48,13 +48,13 @@
   margin-right: 2px;
 }
 
-.courses-single-description {
+/* .courses-single-description {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-}
+} */
 
 .courses-single-price {
   background-color: #b7bf96;
@@ -78,4 +78,20 @@
 
 .courses-single-price p {
   font-size: 1.8vw;
+}
+
+.courses-single-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.courses-single-button button {
+  font-size: 1.8vw;
+  width: 50%;
+  height: 5vw;
+  color: white;
+  background-color: #b7bf96;
+  border-radius: 6px;
+  border: none;
 }

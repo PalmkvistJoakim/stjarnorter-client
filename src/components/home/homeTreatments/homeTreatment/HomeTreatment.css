@@ -24,16 +24,16 @@
 .home-treatment-description {
   margin-top: 6px;
   max-width: 149px;
-}
-
-.home-treatment-description p {
-  font-size: 12px;
-  color: #011b10;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.home-treatment-description p {
+  font-size: 12px;
+  color: #011b10;
 }
 
 @media (min-width: 663px) {

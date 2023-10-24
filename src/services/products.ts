@@ -771,8 +771,8 @@ const products = [
   },
   {
     _id: "61",
-    name: "Mage/Tarm",
-    path: "/butik/örtblandningar/mage-tarm",
+    name: "Mage&Tarm",
+    path: "/butik/örtblandningar/mage&tarm",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar en sund matspjälkning, tarmfunktion, tarmflora och immunförsvar. Örterna är kända för att vara kramplösande, lugnande, slemlösande. Används förebyggande vid Tjocktarmsinflammation, förstoppning, diarré, tarmluft, kolik mm.",
@@ -812,8 +812,8 @@ const products = [
   },
   {
     _id: "63",
-    name: "Leder/Muskler",
-    path: "/butik/örtblandningar/leder-muskler",
+    name: "Leder&Muskler",
+    path: "/butik/örtblandningar/leder&muskler",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar leder, muskler, skelett, utrensning, lever och njurfunktion. Örterna är kända för att vara antireumatiska, blodreglerande, stärkande för hår, päls, hornkvalité.",
