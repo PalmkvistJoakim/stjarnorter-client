@@ -7,16 +7,14 @@ const treatments = [
         <p>
           Bowenterapin, ursprungligen från Australien, är en korrigerande och
           balanserande kroppsterapi olik alla andra.
-        </p>
-        <br />
-        <p>
+          <br />
+          <br />
           Med mjuka grepp över specifika punkter på kroppen påverkas muskler,
           leder, bindväv, nervsystem och meridianer på ett positivt sätt.
           Energigivande, stressreducerande och smärtreducerande. En effektiv
           behandling som främjar kroppens egen läkningsförmåga.
-        </p>
-        <br />
-        <p>
+          <br />
+          <br />
           Med tummar och fingrar stimuleras specifika punkter på kroppen, främst
           genom en slags rullning över muskler och senor. Rullningen startar en
           vibration genom kroppens vävnader vilken i sin tur leder till
@@ -26,9 +24,11 @@ const treatments = [
           Bowenterapin påverkar också nervfunktionerna positivt.Det finns
           egentligen inga begränsningar för vad som kan behandlas med
           bowentekniken.
-        </p>
-        <p style={{ fontWeight: "bold" }}>
-          Bowenterapi passar människor och DJUR i alla åldrar.
+          <br />
+          <br />
+          <span style={{ fontWeight: "bold" }}>
+            Bowenterapi passar människor och DJUR i alla åldrar.
+          </span>
         </p>
       </>
     ),
