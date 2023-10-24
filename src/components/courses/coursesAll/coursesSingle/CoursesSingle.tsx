@@ -47,7 +47,7 @@ function CoursesSingle({ course }: CoursesSingleProps) {
         style={{
           backgroundColor: backgroundColor,
           color: color,
-          // padding: readMore ? "10px" : "",
+          padding: readMore ? "5%" : "",
         }}
       >
         <h1
