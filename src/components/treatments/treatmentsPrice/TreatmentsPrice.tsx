@@ -5,9 +5,6 @@ function TreatmentsPrice() {
     <div className="treatments-price">
       <div className="treatments-price-container">
         <h1>Priser</h1>
-        <p>Bokning av behandling sker via mail eller telefon</p>
-        <p>ina@stjarnorter.se</p>
-        <p>0709-167 157</p>
         <p style={{ fontWeight: "bold" }}>
           30 minuter.................... 450 :-
         </p>

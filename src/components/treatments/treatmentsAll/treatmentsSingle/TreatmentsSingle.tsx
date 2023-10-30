@@ -38,7 +38,7 @@ function TreatmentsSingle({ treatment }: TreatmentsSingleProps) {
             overflow: "hidden",
             textOverflow: "ellipsis",
             display: "-webkit-box",
-            WebkitLineClamp: readMore ? "inherit" : 14,
+            WebkitLineClamp: readMore ? "inherit" : 10,
             WebkitBoxOrient: "vertical",
           }}
         >

@@ -233,7 +233,13 @@ function Product({ product, page }: ProductProps) {
             FRAKT
           </p>
           <p style={{ marginBottom: "10px" }}>
-            fjskgsnkf fdskfdnskl fsdkfn lsfnskf
+            0-250g - 54:-
+            <br />
+            251-500g - 60:-
+            <br />
+            501-1000g - 69:-
+            <br />
+            över 1000g - Fri frakt
           </p>
           <p
             style={{
@@ -245,15 +251,7 @@ function Product({ product, page }: ProductProps) {
           >
             BETALNING
           </p>
-          <p
-            style={{
-              marginBottom: "10px",
-              paddingBottom: "10px",
-              borderBottom: "1px solid #f1f1f1",
-            }}
-          >
-            fdnsklfnsd fdskfdns fdskn kls nfsfsdfs
-          </p>
+          <img src="images/Swish Logo Secondary Light-BG SVG.svg" />
         </div>
       )}
     </div>
