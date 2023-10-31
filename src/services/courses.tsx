@@ -5,7 +5,7 @@ const courses = [
     name: "Energiterapiutbildning",
     date: "Ej fastställt",
     location: "Färlöv, (på min gård)",
-    book: "jockepalmkvist@gmail.com",
+    book: "ina@stjarnorter.se",
     description: (
       <p>
         En kurs i 6 steg där vi går igenom:
@@ -44,7 +44,7 @@ const courses = [
       </p>
     ),
     location: "Färlöv, (på min gård)",
-    book: "jockepalmkvist@gmail.com",
+    book: "ina@stjarnorter.se",
     description: (
       <p>
         I denna kurs lär du dig Regndroppsmassage som är en varsam och rogivande
@@ -93,7 +93,7 @@ const courses = [
     name: "Den vilda trädgården",
     date: "20 maj, 10.00-16.00",
     location: "Färlöv, (på min gård)",
-    book: "jockepalmkvist@gmail.com",
+    book: "ina@stjarnorter.se",
     description: (
       <p>
         Lär dig mer om vad som växer runt knuten, om vad som är ätbart och gott

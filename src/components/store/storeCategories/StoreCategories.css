@@ -1,4 +1,4 @@
-.store-categories {
+/* .store-categories {
   display: flex;
   justify-content: space-between;
   width: 90%;
@@ -9,7 +9,30 @@
 
 @media (min-width: 1500px) {
   .store-categories {
-    background-color: yellow;
+    width: 1350px;
+    gap: 30px 0px;
+  }
+} */
+
+.store-categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6vw 0px;
+  margin: 8vw 0vw;
+}
+
+.store-categories > * {
+  width: calc(50% - 0vw);
+  margin-bottom: 0vw;
+}
+
+.store-categories > :last-child {
+  width: 100%;
+}
+
+@media (min-width: 1500px) {
+  .store-categories {
     width: 1350px;
     gap: 30px 0px;
   }

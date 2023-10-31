@@ -32,8 +32,12 @@ function CoursesSingle({ course }: CoursesSingleProps) {
     name === "Yoga och vandring med ätbara vilda växter";
 
   const handleBook = () => {
+    const subject = `Bokningsförfrågan: ${name}`;
+    const body = `Hej, vad kul att du är intresserad av ${name}. Ange namn och telefonnummer så återkommer jag. /Catharina`;
+
     if (location === "Färlöv, (på min gård)") {
-      window.location.href = `mailto:${book}`;
+      const mailtoLink = `mailto:${book}?subject=${subject}&body=${body}`;
+      window.open(mailtoLink);
     } else {
       window.open(book, "_blank");
     }

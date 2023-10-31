@@ -15,7 +15,7 @@ function TreatmentsSingle({ treatment }: TreatmentsSingleProps) {
   };
 
   function openEmailWindow() {
-    const email = "jockepalmkvist@gmail.com";
+    const email = "ina@stjarnorter.se";
 
     const subject = `Bokningsförfrågan: ${treatment.name}`;
 

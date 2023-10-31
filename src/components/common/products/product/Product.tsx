@@ -251,7 +251,7 @@ function Product({ product, page }: ProductProps) {
           >
             BETALNING
           </p>
-          <img src="images/Swish Logo Secondary Light-BG SVG.svg" />
+          <img src="./images/Swish Logo Secondary Light-BG SVG.svg" />
         </div>
       )}
     </div>

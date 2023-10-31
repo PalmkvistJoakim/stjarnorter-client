@@ -372,325 +372,325 @@ const products = [
       img: "images/Inate2-1.jpg",
     },
   },
-  {
-    _id: "40",
-    name: "Grillkrydda",
-    path: "/butik/kryddor/grillkrydda",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Används som allkrydda.",
-    contents:
-      "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 50, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "41",
-    name: "Het grill",
-    path: "/butik/kryddor/hetgrill",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Med het smak av chilipeppar.",
-    contents:
-      "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 50, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "42",
-    name: "Vild/Lammgrill",
-    path: "/butik/kryddor/vild-lammgrill",
-    img: "images/Inakrydd1-1.jpg",
-    description:
-      "Till viltkött och fågel med bland annat timjan och salvia och rosmarin.",
-    contents:
-      "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 50, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "43",
-    name: "Flingsalt med dill",
-    path: "/butik/kryddor/flingsalt-dill",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "44",
-    name: "Flingsalt med ramslök",
-    path: "/butik/kryddor/flingsalt-ramslök",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "45",
-    name: "Flingsalt med dragon och chili",
-    path: "/butik/kryddor/flingsalt-dragon-chili",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "46",
-    name: "Flingsalt med örter",
-    path: "/butik/kryddor/flingsalt-örter",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "47",
-    name: "Flingsalt med fyra lökar",
-    path: "/butik/kryddor/flingsalt-fyra-lökar",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "48",
-    name: "Flingsalt med dill, fänkål, gräslök",
-    path: "/butik/kryddor/flingsalt-dill-fänkål-gräslök",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents: "100% rent flingsalt blandat med olika örter.",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "49",
-    name: "Extra knorr",
-    path: "/butik/kryddor/extra-knorr",
-    img: "images/Inakrydd1-1.jpg",
-    description: "En kryddig blandning för fläskrätter.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "50",
-    name: "Fina fenan",
-    path: "/butik/kryddor/fina-fenan",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Lämplig till all fisk.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "51",
-    name: "Himmel och hav",
-    path: "/butik/kryddor/himmelochhav",
-    img: "images/Inakrydd1-1.jpg",
-    description:
-      "Till fågel och fisk. Med bla citronverbena, sichuanpeppar och basilika.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "52",
-    name: "Lammkrydda",
-    path: "/butik/kryddor/lammkrydda",
-    img: "images/Inakrydd1-1.jpg",
-    description: "",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "53",
-    name: "Persillade",
-    path: "/butik/kryddor/persillade",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Gott i det mesta, passar till pasta och soppor.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "54",
-    name: "Salladsörter",
-    path: "/butik/kryddor/salladsörter",
-    img: "images/Inakrydd1-1.jpg",
-    description: "En örtmix, lika god i salladen som i gratängen.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "55",
-    name: "Vilda grytan",
-    path: "/butik/kryddor/vildagrytan",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Till söndagssteken eller musitga grytor.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
-  {
-    _id: "56",
-    name: "Örtmix",
-    path: "/butik/kryddor/örtmix",
-    img: "images/Inakrydd1-1.jpg",
-    description: "Ljuvlig i smakerna.",
-    contents:
-      "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
-    sizes: [
-      { weight: 35, price: 50 },
-      { weight: 60, price: 65 },
-    ],
-    category: {
-      _id: "11",
-      name: "Kryddor",
-      path: "/kryddor",
-      img: "images/Inakrydd1-1.jpg",
-    },
-  },
+  // {
+  //   _id: "40",
+  //   name: "Grillkrydda",
+  //   path: "/butik/kryddor/grillkrydda",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Används som allkrydda.",
+  //   contents:
+  //     "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 50, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "41",
+  //   name: "Het grill",
+  //   path: "/butik/kryddor/hetgrill",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Med het smak av chilipeppar.",
+  //   contents:
+  //     "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 50, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "42",
+  //   name: "Vild/Lammgrill",
+  //   path: "/butik/kryddor/vild-lammgrill",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description:
+  //     "Till viltkött och fågel med bland annat timjan och salvia och rosmarin.",
+  //   contents:
+  //     "Hantverksmässigt malda kryddor utan tillsatser med rent salt hämtat från Himalayas sluttningar. Eftersom jag inte använder mig av klumpförebyggande medel kan du behöva skaka burken.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 50, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "43",
+  //   name: "Flingsalt med dill",
+  //   path: "/butik/kryddor/flingsalt-dill",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "44",
+  //   name: "Flingsalt med ramslök",
+  //   path: "/butik/kryddor/flingsalt-ramslök",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "45",
+  //   name: "Flingsalt med dragon och chili",
+  //   path: "/butik/kryddor/flingsalt-dragon-chili",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "46",
+  //   name: "Flingsalt med örter",
+  //   path: "/butik/kryddor/flingsalt-örter",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "47",
+  //   name: "Flingsalt med fyra lökar",
+  //   path: "/butik/kryddor/flingsalt-fyra-lökar",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "48",
+  //   name: "Flingsalt med dill, fänkål, gräslök",
+  //   path: "/butik/kryddor/flingsalt-dill-fänkål-gräslök",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents: "100% rent flingsalt blandat med olika örter.",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "49",
+  //   name: "Extra knorr",
+  //   path: "/butik/kryddor/extra-knorr",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "En kryddig blandning för fläskrätter.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "50",
+  //   name: "Fina fenan",
+  //   path: "/butik/kryddor/fina-fenan",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Lämplig till all fisk.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "51",
+  //   name: "Himmel och hav",
+  //   path: "/butik/kryddor/himmelochhav",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description:
+  //     "Till fågel och fisk. Med bla citronverbena, sichuanpeppar och basilika.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "52",
+  //   name: "Lammkrydda",
+  //   path: "/butik/kryddor/lammkrydda",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "53",
+  //   name: "Persillade",
+  //   path: "/butik/kryddor/persillade",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Gott i det mesta, passar till pasta och soppor.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "54",
+  //   name: "Salladsörter",
+  //   path: "/butik/kryddor/salladsörter",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "En örtmix, lika god i salladen som i gratängen.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "55",
+  //   name: "Vilda grytan",
+  //   path: "/butik/kryddor/vildagrytan",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Till söndagssteken eller musitga grytor.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
+  // {
+  //   _id: "56",
+  //   name: "Örtmix",
+  //   path: "/butik/kryddor/örtmix",
+  //   img: "images/Inakrydd1-1.jpg",
+  //   description: "Ljuvlig i smakerna.",
+  //   contents:
+  //     "Torkade kryddor helt utan tillsatser. De är fantastiskt goda till kalla såser. Låt gärna såsen dra till sig några timmar innan servering. Fungerar även utmärkt i dippsåsen till chipsen!",
+  //   sizes: [
+  //     { weight: 35, price: 50 },
+  //     { weight: 60, price: 65 },
+  //   ],
+  //   category: {
+  //     _id: "11",
+  //     name: "Kryddor",
+  //     path: "/kryddor",
+  //     img: "images/Inakrydd1-1.jpg",
+  //   },
+  // },
   {
     _id: "57",
     name: "Skinbalance",

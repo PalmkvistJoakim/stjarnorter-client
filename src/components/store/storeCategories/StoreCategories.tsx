@@ -15,6 +15,7 @@ function StoreCategories() {
       />
     ));
   };
+
   return <div className="store-categories">{renderCategories()}</div>;
 }
 
