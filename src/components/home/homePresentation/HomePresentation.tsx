@@ -17,8 +17,7 @@ function HomePresentation() {
             <br /> Utforska vårt sortiment av produkter, behandlingar och
             inspirerande kurser för holistisk välmående.
             {!isDesktop && <br />}
-            <br /> Upptäck örter, kryddor, salter, salvor och teer för
-            chakrasystemet.
+            <br /> Upptäck örter, salvor och teer för chakrasystemet.
           </p>
         </div>
         <div className="home-presentation-buttons">

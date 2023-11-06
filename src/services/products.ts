@@ -2,7 +2,7 @@ const products = [
   {
     _id: "20",
     name: "Strålande",
-    path: "/butik/örtteer/strålande",
+    path: "strålande",
     img: "images/Inate2-1.jpg",
     description: "För en god start på dagen.",
     contents: "pepparmynta, rosblad, ringblomma, ingefära",
@@ -20,7 +20,7 @@ const products = [
   {
     _id: "21",
     name: "Stärkande",
-    path: "/butik/örtteer/stärkande",
+    path: "stärkande",
     img: "images/Inate2-1.jpg",
     description:
       "För organ och leder. Ett örtte som främjar en god njur och leverfunktion.",
@@ -40,7 +40,7 @@ const products = [
   {
     _id: "22",
     name: "Magstärkande",
-    path: "/butik/örtteer/magstärkande",
+    path: "magstärkande",
     img: "images/Inate2-1.jpg",
     description: "Främjar en god magfunktion. Förebygger gasiga magar.",
     contents: "pepparmynta, kamomill, fänkål",
@@ -58,7 +58,7 @@ const products = [
   {
     _id: "23",
     name: "Balanserande",
-    path: "/butik/örtteer/balanserande",
+    path: "balanserande",
     img: "images/Inate2-1.jpg",
     description: "För den kvinnliga balansen.",
     contents:
@@ -77,7 +77,7 @@ const products = [
   {
     _id: "24",
     name: "Befriande",
-    path: "/butik/örtteer/befriande",
+    path: "befriande",
     img: "images/Inate2-1.jpg",
     description: "Förebygger luftvägsbekymmer.",
     contents:
@@ -96,7 +96,7 @@ const products = [
   {
     _id: "25",
     name: "Lugnande",
-    path: "/butik/örtteer/lugnande",
+    path: "lugnande",
     img: "images/Inate2-1.jpg",
     description: "För en god natts sömn.",
     contents:
@@ -115,7 +115,7 @@ const products = [
   {
     _id: "26",
     name: "Njutning",
-    path: "/butik/örtteer/njutning",
+    path: "njutning",
     img: "images/Inate2-1.jpg",
     description: "Förebygger sötsug. Utmärkt som eftermiddagste.",
     contents:
@@ -134,7 +134,7 @@ const products = [
   {
     _id: "27",
     name: "Gryning",
-    path: "/butik/örtteer/gryning",
+    path: "gryning",
     img: "images/Inate2-1.jpg",
     description: "För en god start på dagen.",
     contents:
@@ -153,7 +153,7 @@ const products = [
   {
     _id: "28",
     name: "Skymning",
-    path: "/butik/örtteer/skymning",
+    path: "skymning",
     img: "images/Inate2-1.jpg",
     description: "För ett gott slut på dagen.",
     contents:
@@ -172,7 +172,7 @@ const products = [
   {
     _id: "29",
     name: "Chai-latte",
-    path: "/butik/örtteer/chai-latte",
+    path: "chai-latte",
     img: "images/Inate2-1.jpg",
     description: "Naturliga smaker av choklad, kanel och kardemumma.",
     contents:
@@ -191,10 +191,10 @@ const products = [
   {
     _id: "30",
     name: "Vilda Hilda",
-    path: "/butik/örtteer/vildahilda",
+    path: "vildahilda",
     img: "images/Inate2-1.jpg",
     description: "Rött te med äkta smak av jordgubb och vanilj.",
-    contents: "",
+    contents: "Rött te",
     sizes: [
       { weight: 60, price: 79 },
       { weight: 125, price: 135 },
@@ -209,10 +209,10 @@ const products = [
   {
     _id: "31",
     name: "Spralliga Alice",
-    path: "/butik/örtteer/spralligaalice",
+    path: "spralligaalice",
     img: "images/Inate2-1.jpg",
     description: "Rött te med äkta smak av äpple och vanilj.",
-    contents: "",
+    contents: "Rött te",
     sizes: [
       { weight: 60, price: 79 },
       { weight: 125, price: 135 },
@@ -227,10 +227,11 @@ const products = [
   {
     _id: "32",
     name: "Friskus",
-    path: "/butik/örtteer/friskus",
+    path: "friskus",
     img: "images/Inate2-1.jpg",
     description: "Grönt te med äkta smak av citron och honung.",
-    contents: "",
+    contents:
+      "gunpowder, sencha, makato, granatäppel-blomma, citrongräs, ingefära, lime, honung",
     sizes: [
       { weight: 60, price: 79 },
       { weight: 125, price: 135 },
@@ -245,7 +246,7 @@ const products = [
   {
     _id: "33",
     name: "Baschakrat",
-    path: "/butik/örtteer/baschakrat",
+    path: "baschakrat",
     img: "images/Inate2-1.jpg",
     description: "Binjurarna.",
     contents:
@@ -264,7 +265,7 @@ const products = [
   {
     _id: "34",
     name: "Navelchakrat",
-    path: "/butik/örtteer/navelchakrat",
+    path: "navelchakrat",
     img: "images/Inate2-1.jpg",
     description: "Äggstockar, testiklar.",
     contents:
@@ -283,7 +284,7 @@ const products = [
   {
     _id: "35",
     name: "Solar plexuschakrat",
-    path: "/butik/örtteer/solarplexuschakrat",
+    path: "solarplexuschakrat",
     img: "images/Inate2-1.jpg",
     description: "Bukspottskörteln.",
     contents: "solros, pepparmynta, citronmeliss, stjärnanis, fänkål",
@@ -301,7 +302,7 @@ const products = [
   {
     _id: "36",
     name: "Hjärtchakrat",
-    path: "/butik/örtteer/hjärtchakrat",
+    path: "hjärtchakrat",
     img: "images/Inate2-1.jpg",
     description: "Brässen.",
     contents: "hagtorn, nässla, svart vinbärsblad, rosblad, nyponskal",
@@ -319,7 +320,7 @@ const products = [
   {
     _id: "37",
     name: "Halschakrat",
-    path: "/butik/örtteer/halschakrat",
+    path: "halschakrat",
     img: "images/Inate2-1.jpg",
     description: "Sköldkörteln.",
     contents: "eucalyptusblad, blåbär, isop, kungsljus, blåklint, lavendel",
@@ -337,7 +338,7 @@ const products = [
   {
     _id: "38",
     name: "Pannchakrat",
-    path: "/butik/örtteer/pannchakrat",
+    path: "pannchakrat",
     img: "images/Inate2-1.jpg",
     description: "Hypofysen.",
     contents:
@@ -356,7 +357,7 @@ const products = [
   {
     _id: "39",
     name: "Kronchakrat",
-    path: "/butik/örtteer/kronchakrat",
+    path: "kronchakrat",
     img: "images/Inate2-1.jpg",
     description: "Epifysen.",
     contents:
@@ -694,7 +695,7 @@ const products = [
   {
     _id: "57",
     name: "Skinbalance",
-    path: "/butik/salvor&cerat/skinbalance",
+    path: "skinbalance",
     img: "images/scinbalance1-1.jpg",
     description:
       "En stärkande och skyddande creme för ansiktet samt för dig med eksem, klåda ellerbrännsår. För hund används den på hotspot och små sår. Används fördelaktigt som dagceme i ansiktet. Doftar underbart!",
@@ -713,7 +714,7 @@ const products = [
   {
     _id: "58",
     name: "Ringblomssalva",
-    path: "/butik/salvor&cerat/ringblomssalva",
+    path: "ringblomssalva",
     img: "images/scinbalance1-1.jpg",
     description:
       "Mjukgörande och sårläkande universalsalva gjord av ekologiska ingredienser.",
@@ -733,11 +734,12 @@ const products = [
   {
     _id: "59",
     name: "Tigerbalsam",
-    path: "/butik/salvor&cerat/tigerbalsam",
+    path: "tigerbalsam",
     img: "images/scinbalance1-1.jpg",
     description:
       "En välgörande balsam för trötta och stela muskler. Denna balsam är värmande och gör gott efter träning eller i massage.",
-    contents: "",
+    contents:
+      "kokosolja, kakaosmör, bivax, tistelolja, kamfrer eucalyptus, wintergröna, lavendel",
     sizes: [
       { weight: 30, price: 65 },
       { weight: 50, price: 115 },
@@ -752,7 +754,7 @@ const products = [
   {
     _id: "60",
     name: "Muggsalva",
-    path: "/butik/salvor&cerat/muggsalva",
+    path: "muggsalva",
     img: "images/scinbalance1-1.jpg",
     description:
       "Mugg är en hudinflammation i karleden som uppkommer när den känsliga huden skadas av ex smuts, fukt eller skav. Kraftig mugg kan orsaka hälta men andra symtom kan vara ömhet, svullnad, värmeökning, rodnad. Muggsalvan lindrar och förebygger samt verkar hämande för bakterier. Den är mjukgörande och stärkande. ",
@@ -771,8 +773,8 @@ const products = [
   },
   {
     _id: "61",
-    name: "Mage&Tarm",
-    path: "/butik/örtblandningar/mage&tarm",
+    name: "Mage/Tarm",
+    path: "mage&tarm",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar en sund matspjälkning, tarmfunktion, tarmflora och immunförsvar. Örterna är kända för att vara kramplösande, lugnande, slemlösande. Används förebyggande vid Tjocktarmsinflammation, förstoppning, diarré, tarmluft, kolik mm.",
@@ -793,7 +795,7 @@ const products = [
   {
     _id: "62",
     name: "Rörelse",
-    path: "/butik/örtblandningar/rörelse",
+    path: "rörelse",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar en god rörlighet i muskler och leder. Används vid akuta problem med överansträngning i muskler, leder och senor. Vid långvaringa problem rek. Leder/Muskler i ca 4 veckor och därefter övergå till Rörelse föra att biehålla elasticitet.",
@@ -812,8 +814,8 @@ const products = [
   },
   {
     _id: "63",
-    name: "Leder&Muskler",
-    path: "/butik/örtblandningar/leder&muskler",
+    name: "Leder/Muskler",
+    path: "leder&muskler",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar leder, muskler, skelett, utrensning, lever och njurfunktion. Örterna är kända för att vara antireumatiska, blodreglerande, stärkande för hår, päls, hornkvalité.",
@@ -834,7 +836,7 @@ const products = [
   {
     _id: "64",
     name: "Immunförsvar",
-    path: "/butik/örtblandningar/immunförsvar",
+    path: "immunförsvar",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar ett gott immunsvar och inre balans i organen. Används vid fång, svåra fall av eksem, utrensningsproblem och svagt immunförsvar.",
@@ -855,7 +857,7 @@ const products = [
   {
     _id: "65",
     name: "Lugnande hormon",
-    path: "/butik/örtblandningar/lugnandehormon",
+    path: "lugnandehormon",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar en god balans i  nerverna och  hormonerna. Örtblandningarna är kända för att vara lugnande (ej slöande) nervstärkande, hormonbalanserande och för att öka koncentrationen. Används vid brunstproblem, humörsvängingar, nervösa besvär, svårigheter att koppla av.",
@@ -876,7 +878,7 @@ const products = [
   {
     _id: "66",
     name: "Luftvägar",
-    path: "/butik/örtblandningar/luftvägar",
+    path: "luftvägar",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar sunda andningsvägar och lungor. Örterna i blandningen är kända för att vara slemlösande, kramplösande, bakteriedödande, virushämmande. Används vid bronkit, astma, hosta, känsliga luftvägar, halsfluss, inflammation i luftvägarna.",
@@ -897,7 +899,7 @@ const products = [
   {
     _id: "67",
     name: "Metabolbalans",
-    path: "/butik/örtblandningar/metabolbalans",
+    path: "metabolbalans",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar en god ämnesomsättning och hormonbalans. Ett tillskott för individer med upprepande viktuppgång, fång och problem med basalmetabolismen.",
@@ -918,11 +920,12 @@ const products = [
   {
     _id: "68",
     name: "Energi",
-    path: "/butik/örtblandningar/energi",
+    path: "energi",
     img: "images/Örter1-1.jpg",
     description:
       "En blandning som består av massor med spännande bär, frukter, alger och örter. Främjar en god blodsockerbalans.",
-    contents: "",
+    contents:
+      "spirulina, nässla, pepparmynta, alfalfa, bockhornsklöver, loppfrö, gurkmeja, nypon, bovete, kelp, anis, fänkål, salvia, timjan, gullris, kardborre, baobab, apelsin, blåbär, hallon, banan, mango, ingefära, maskros, björkblad, persilja, vänderot, dill, kanel, snärjmåra, kummin, senap",
     sizes: [
       { weight: 125, price: 240 },
       { weight: 300, price: 370 },
@@ -938,7 +941,7 @@ const products = [
   {
     _id: "69",
     name: "Starka hovar",
-    path: "/butik/örtblandningar/starka-hovar",
+    path: "starkahovar",
     img: "images/Örter1-1.jpg",
     description:
       "Främjar starka hovar, klor naglar och hårkvalitet. Används vid sköra hovar, fång, dålig hårrem, problem med trampdynor och klor/hovar/hud. Örterna ökar genomblödningen i de små blodkärlen och är naturligt rika på kisel vilket främjar hår, hud och naglar.",
@@ -959,7 +962,7 @@ const products = [
   {
     _id: "70",
     name: "Mage EXTRA",
-    path: "/butik/örtblandningar/mage-extra",
+    path: "mage-extra",
     img: "images/Örter1-1.jpg",
     description:
       "En örtblandning som förebygger parasiter och främjar en god tarmflora. Ges i en kur på 5 dagar var 3:e månad.",

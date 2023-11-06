@@ -4,6 +4,7 @@ import BackgroundWithDescription from "../../common/backgroundWithDescription/Ba
 import { useEffect } from "react";
 import Products from "../../common/products/Products";
 import StoreShipping from "../storeShipping/StoreShipping";
+import StoreProductsInfo from "./storeProductsInfo/StoreProductsInfo";
 
 function StoreProducts() {
   const { categoryName } = useParams();
@@ -62,6 +63,7 @@ function StoreProducts() {
     <div className="store-products">
       {renderDescriptions(categoryName)}
       <div className="store-products-container">
+        {categoryName !== "salvor&cerat" && <StoreProductsInfo />}
         <Products page="store" />
       </div>
       <StoreShipping />
