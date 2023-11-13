@@ -1,0 +1,31 @@
+.about-courses {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  margin-top: 46vw;
+  margin-bottom: 20vw;
+}
+
+.about-courses img {
+  width: 70%;
+  height: 60vw;
+  object-fit: cover;
+  position: absolute;
+  top: -46%;
+}
+
+.about-courses-text {
+  display: flex;
+  /* height: 70vw; */
+  align-items: center;
+  width: 90%;
+  background-color: #011b10;
+}
+
+.about-courses-text p {
+  padding: 40px;
+  padding-top: 80px;
+  font-size: 3vw;
+  color: white;
+}

@@ -1,0 +1,33 @@
+.about-farmacy {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  margin-bottom: 56vw;
+}
+
+.about-farmacy img {
+  width: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+}
+
+.about-farmacy-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  position: absolute;
+  bottom: -80%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  background-color: #b7bf96;
+}
+
+.about-farmacy-text p {
+  font-size: 3vw;
+  padding: 40px;
+}

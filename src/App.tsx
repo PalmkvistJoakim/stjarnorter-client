@@ -12,6 +12,7 @@ import Courses from "./components/courses/Courses";
 import { CartProvider } from "./context/CartContext";
 import { ResizeProvider } from "./context/ResizeContext";
 import Checkout from "./components/cart/checkout/Checkout";
+import Contact from "./components/contact/Contact";
 
 function App() {
   return (
@@ -30,6 +31,11 @@ function App() {
               element={<StoreProductPage />}
             />
             <Route
+              path="/stjarnorter-client/:productName"
+              element={<StoreProductPage />}
+            />
+            <Route path="/:productName" element={<StoreProductPage />} />
+            <Route
               path="/butik/:categoryName/:productName"
               element={<StoreProductPage />}
             />
@@ -40,6 +46,7 @@ function App() {
             />
             <Route path="/behandlingar" element={<Treatments />} />
             <Route path="/om" element={<About />} />
+            <Route path="/kontakt" element={<Contact />} />
             <Route path="/checkout" element={<Checkout />} />
           </Routes>
         </CartProvider>

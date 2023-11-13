@@ -45,8 +45,8 @@ function Footer() {
             <p>
               Välkommen till Stjärnörter vi erbjuder både behandlingar och
               produkter för naturligt välbefinnande. Upptäck vårt sortiment av
-              handgjorda örtblandningar, kryddor och teer, samtidigt som du kan
-              boka behandlingar för både människor och djur.
+              handgjorda örtblandningar och teer, samtidigt som du kan boka
+              behandlingar för både människor och djur.
               <br />
               <br />
               Låt oss guida dig till en holistisk upplevelse av hälsa och

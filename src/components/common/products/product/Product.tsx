@@ -5,7 +5,8 @@ import { ResizeContext } from "../../../../context/ResizeContext";
 import { IProduct, IProductSizeOption } from "../../../../interfaces/IProduct";
 import { IProductCart } from "../../../../interfaces/ICart";
 import { AddShoppingCartOutlined } from "@mui/icons-material/";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import StoreProductsInfo from "../../../store/storeProducts/storeProductsInfo/StoreProductsInfo";
 
 interface ProductProps {
   product: IProduct;
@@ -18,6 +19,7 @@ function Product({ product, page }: ProductProps) {
   const [selectedWeightError, setSelectedWeightError] = useState(false);
   const { order, setOrder } = useContext(CartContext);
   const { isDesktop } = useContext(ResizeContext);
+  const { categoryName } = useParams();
 
   const { path, img, category, name, sizes, description, contents } = product;
 
@@ -199,7 +201,6 @@ function Product({ product, page }: ProductProps) {
               fontSize: "10px",
               marginBottom: "4px",
               paddingTop: "10px",
-              borderTop: "1px solid #f1f1f1",
             }}
           >
             BESKRIVNING
@@ -218,16 +219,18 @@ function Product({ product, page }: ProductProps) {
           <p
             style={{
               borderBottom: "1px solid #f1f1f1",
-              paddingBottom: "30px",
+              paddingBottom: "10px",
+              marginBottom: "30px",
             }}
           >
             {contents}
           </p>
+          {categoryName !== "salvor&cerat" && <StoreProductsInfo />}
           <p
             style={{
               fontSize: "10px",
               marginBottom: "4px",
-              paddingTop: "30px",
+              paddingTop: "10px",
             }}
           >
             FRAKT

@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 50vw;
+  padding: 40px;
+  background-color: #e4deae;
+}
+
+.contact-info p {
+  font-size: 4vw;
+  font-style: italic;
+}

@@ -1,0 +1,28 @@
+.about-health {
+  display: flex;
+  width: 90%;
+  margin-bottom: 20vw;
+  position: relative;
+}
+
+.about-health-text {
+  display: flex;
+  height: 74.5vw;
+  align-items: center;
+  width: 55%;
+  background-color: #e4deae;
+  z-index: 1;
+}
+
+.about-health-text p {
+  padding: 20px;
+  font-size: 3vw;
+}
+
+.about-health img {
+  width: 55%;
+  object-fit: cover;
+  position: absolute;
+  top: 15%;
+  right: 0%;
+}

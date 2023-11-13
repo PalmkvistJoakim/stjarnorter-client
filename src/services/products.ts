@@ -701,8 +701,8 @@ const products = [
       "En stärkande och skyddande creme för ansiktet samt för dig med eksem, klåda ellerbrännsår. För hund används den på hotspot och små sår. Används fördelaktigt som dagceme i ansiktet. Doftar underbart!",
     contents: "ringblomma, bivax, nattljusolja, havtornsolja, zink, kamomill",
     sizes: [
-      { weight: 30, price: 190 },
-      { weight: 50, price: 270 },
+      { weight: 30, price: 195 },
+      { weight: 50, price: 295 },
     ],
     category: {
       _id: "12",

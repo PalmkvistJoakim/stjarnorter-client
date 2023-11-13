@@ -1,0 +1,17 @@
+.about-ecotopia {
+  display: flex;
+  width: 90%;
+  position: relative;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  border-top: 2px solid #011b10;
+  border-bottom: 2px solid #011b10;
+  padding: 5% 0%;
+}
+
+.about-ecotopia p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+  color: #133a1b;
+}

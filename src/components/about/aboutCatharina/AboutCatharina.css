@@ -1,0 +1,28 @@
+.about-catharina {
+  display: flex;
+  width: 90%;
+  position: relative;
+  margin-top: 10vw;
+  margin-bottom: 20vw;
+}
+
+.about-catharina img {
+  width: 55%;
+  object-fit: cover;
+}
+
+.about-catharina-text {
+  display: flex;
+  height: 70vw;
+  align-items: center;
+  position: absolute;
+  right: 0%;
+  top: 14%;
+  width: 55%;
+  background-color: #e4deae;
+}
+
+.about-catharina-text p {
+  padding: 20px;
+  font-size: 3vw;
+}
