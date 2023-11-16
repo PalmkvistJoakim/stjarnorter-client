@@ -11,8 +11,8 @@ import About from "./components/about/About";
 import Courses from "./components/courses/Courses";
 import { CartProvider } from "./context/CartContext";
 import { ResizeProvider } from "./context/ResizeContext";
-import Checkout from "./components/cart/checkout/Checkout";
 import Contact from "./components/contact/Contact";
+import Varukorg from "./components/varukorg/Varukorg";
 
 function App() {
   return (
@@ -47,7 +47,7 @@ function App() {
             <Route path="/behandlingar" element={<Treatments />} />
             <Route path="/om" element={<About />} />
             <Route path="/kontakt" element={<Contact />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/varukorg" element={<Varukorg />} />
           </Routes>
         </CartProvider>
         <Footer />

@@ -1,0 +1,28 @@
+.varukorg {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px;
+}
+
+.varukorg-container {
+  width: 90%;
+}
+
+.varukorg-headers {
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.varukorg-button-delivery {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.varukorg-button-payment {
+  display: flex;
+  justify-content: center;
+}

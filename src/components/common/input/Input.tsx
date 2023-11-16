@@ -22,7 +22,7 @@ function Input({ label, name, value, placeholder }: InputProps) {
     <div className="input">
       <label style={{ display: "flex" }}>
         {label}
-        <p style={{ color: "red" }}>*</p>
+        <p style={{ color: "red", marginLeft: "3px" }}>*</p>
       </label>
       <input
         name={name}

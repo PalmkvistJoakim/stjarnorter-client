@@ -1,0 +1,13 @@
+.cart-delivery-information {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  margin: 30px 0px;
+  width: 100%;
+}
+
+.cart-delivery-information-container {
+  background-color: #e4deae;
+
+  padding: 30px;
+}

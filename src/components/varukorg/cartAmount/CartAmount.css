@@ -1,0 +1,29 @@
+.cart-amount {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cart-amount-amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.cart-amount-shipping {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-amount-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-amount-calculate {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+}

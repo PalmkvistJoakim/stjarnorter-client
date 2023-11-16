@@ -1,0 +1,8 @@
+.cart-products {
+  height: 39vh;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  overflow-y: auto;
+  max-height: calc(100% - 200px);
+  flex-shrink: 100;
+}

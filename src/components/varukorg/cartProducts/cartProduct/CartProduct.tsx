@@ -1,7 +1,7 @@
-import "./CartProduct.css";
 import { useContext } from "react";
-import { IProductCart } from "../../../interfaces/ICart";
-import { CartContext } from "../../../context/CartContext";
+import { IProductCart } from "../../../../interfaces/ICart";
+import "./CartProduct.css";
+import { CartContext } from "../../../../context/CartContext";
 
 interface CartProductProps {
   product: IProductCart;
@@ -44,20 +44,20 @@ function CartProduct({ product }: CartProductProps) {
   return (
     <div className="cart-product">
       <img src={img} />
-      <div className="cart-product-container">
+      <div className="cart-product-text">
         <p
           style={{
             textTransform: "uppercase",
             fontSize: "12px",
-            marginTop: "10px",
           }}
         >
           {category.name}
         </p>
-        <h1>{name}</h1>
-        <div className="cart-product-price">
-          <p style={{ marginRight: "4px" }}>{selectedWeight?.price} kr /</p>
-          <p>{selectedWeight?.weight}</p>
+        <div className="cart-product-info">
+          <h1>{name}</h1>
+          <p style={{ marginRight: "4px", fontSize: "14px" }}>
+            {selectedWeight?.price}kr / {selectedWeight?.weight}
+          </p>
         </div>
         <div className="cart-product-totalprice">
           <div className="cart-product-buttons">
@@ -74,7 +74,7 @@ function CartProduct({ product }: CartProductProps) {
             </button>
             <button onClick={incrementQuantity}>+</button>
           </div>
-          <p>{totalPrice} kr</p>
+          <p style={{ fontWeight: "bold" }}>{totalPrice} kr</p>
         </div>
       </div>
     </div>

@@ -4,7 +4,6 @@ import { MenuOutlined, ShoppingCartOutlined } from "@mui/icons-material/";
 import { getHeaders } from "../../services/headers";
 import { useContext, useState } from "react";
 import MobileHeaders from "./mobileHeaders/MobileHeaders";
-import Cart from "../cart/Cart";
 import { ResizeContext } from "../../context/ResizeContext";
 import { CartContext } from "../../context/CartContext";
 
@@ -51,16 +50,17 @@ function NavBar() {
         </Link>
         <div className="navbar-headers">
           {!isMobile && renderHeaders()}
-          {showCart && <Cart showCart={showCart} setShowCart={setShowCart} />}
           <div className="navbar-shopping">
-            <ShoppingCartOutlined
-              onClick={handleCart}
-              style={{
-                fontSize: "30px",
-                color: "white",
-                cursor: "pointer",
-              }}
-            />
+            <Link to="/varukorg">
+              <ShoppingCartOutlined
+                onClick={handleCart}
+                style={{
+                  fontSize: "30px",
+                  color: "white",
+                  cursor: "pointer",
+                }}
+              />
+            </Link>
             {totalProducts > 0 && (
               <div className="navbar-cart">{totalProducts}</div>
             )}
